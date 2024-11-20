@@ -1,0 +1,2299 @@
+--- file1.txt
++++ file2.txt
+@@ -1,8 +1,8 @@
+ Türkçeleştirmek	V;IMP;POS;DECL;NOM(2,SG)	Türkçeleştir
+
+-Türkçeleştirmek	V;IND;PRS;HAB;POS;DECL;NOM(2,SG)	Türkçeleştirirsin
+
++Türkçeleştirmek	V;IND;PRS;HAB;POS;DECL;NOM(2,SG)	Türkçeleştirersin
+
+ Türkçeleştirmek	V;IND;PST;HAB;INTR;POS;NOM(1,PL)	Türkçeleştirir miydik
+
+ Türkçeleştirmek	V;IND;PST;PERF;NEG;INTR;NOM(3,SG)	Türkçeleştirmedi miydi
+
+-Türkçeleştirmek	V;IND;PST;PROG;INTR;POS;NOM(3,SG)	Türkçeleştiriyor muydu
+
++Türkçeleştirmek	V;IND;PST;PROG;INTR;POS;NOM(3,SG)	Türkçeleştirüyor muydu
+
+ Türkçeleştirmek	V;IND;PST;PRSP;NEG;DECL;NOM(1,SG)	Türkçeleştirmeyecektim
+
+ Türkçeleştirmek	V;INFR;FUT;HAB;NEG;DECL;NOM(3,PL)	Türkçeleştirir olmayacaklarmış
+
+ Türkçeleştirmek	V;INFR;FUT;NEG;DECL;NOM(2,SG)	Türkçeleştirmeyecekmişsin
+
+@@ -13,13 +13,13 @@
+ Türkçeleştirmek	V;INFR;PST;INTR;POS;NOM(2,SG)	Türkçeleştirmiş misin
+
+ Türkçeleştirmek	V;INFR;PST;PERF;NEG;DECL;NOM(3,SG)	Türkçeleştirmemişti
+
+ Türkçeleştirmek	V;INFR;PST;PERF;NEG;INTR;NOM(3,PL)	Türkçeleştirmemişler miydi
+
+-Türkçeleştirmek	V;NEC;INFR;PRS;PROG;NEG;DECL;NOM(1,SG)	Türkçeleştiriyor olmamalıymışım
+
++Türkçeleştirmek	V;NEC;INFR;PRS;PROG;NEG;DECL;NOM(1,SG)	Türkçeleştiryor olmamalıymışım
+
+ Türkçeleştirmek	V;NEC;INFR;PRS;PROG;POS;DECL;NOM(2,SG)	Türkçeleştiriyor olmalıymışsın
+
+ Türkçeleştirmek	V;NEC;PRS;POS;DECL;NOM(1,SG)	Türkçeleştirmeliyim
+
+-Türkçeleştirmek	V;NEC;PST;INTR;POS;NOM(1,SG)	Türkçeleştirmeli miydim
+
++Türkçeleştirmek	V;NEC;PST;INTR;POS;NOM(1,SG)	Türkçeleştirmelı mıydım
+
+ Türkçeleştirmek	V;NEC;PST;NEG;DECL;NOM(3,SG)	Türkçeleştirmemeliydi
+
+ Türkçeleştirmek	V;NEC;PST;PROG;INTR;POS;NOM(1,SG)	Türkçeleştiriyor olmalı mıydım
+
+-Türkçeleştirmek	V;NEC;PST;PROG;POS;DECL;NOM(1,SG)	Türkçeleştiriyor olmalıydım
+
++Türkçeleştirmek	V;NEC;PST;PROG;POS;DECL;NOM(1,SG)	Türkçeleştiryor olmalıydım
+
+ anahtarlık	N;ABL(PL)	anahtarlıklardan
+
+ anahtarlık	N;ABL(PL;PSS(2,PL))	anahtarlıklarınızdan
+
+ anahtarlık	N;ABL(PL;PSS(3,SG))	anahtarlıklarından
+
+@@ -28,7 +28,7 @@
+ anahtarlık	N;ACC(PL;PSS(2,PL))	anahtarlıklarınızı
+
+ anahtarlık	N;ACC(PL;PSS(2,SG))	anahtarlıklarını
+
+ anahtarlık	N;ACC(PL;PSS(3,SG))	anahtarlıklarını
+
+-anahtarlık	N;DAT(PL;PSS(1,PL))	anahtarlıklarımıza
+
++anahtarlık	N;DAT(PL;PSS(1,PL))	anahtarlıklerimize
+
+ anahtarlık	N;DAT(PL;PSS(3,SG))	anahtarlıklarına
+
+ anahtarlık	N;GEN(PL)	anahtarlıkların
+
+ anahtarlık	N;GEN(SG)	anahtarlığın
+
+@@ -42,28 +42,28 @@
+ anahtarlık	N;NOM(PL;PSS(2,PL))	anahtarlıklarınız
+
+ anahtarlık	N;NOM(PL;PSS(2,SG))	anahtarlıkların
+
+ anahtarlık	N;NOM(SG;PSS(2,PL))	anahtarlığınız
+
+-asimptot	N;ABL(PL;PSS(1,PL))	asimptotlarımızdan
+
+-asimptot	N;ABL(PL;PSS(2,SG))	asimptotlarından
+
+-asimptot	N;ABL(PL;PSS(3,SG))	asimptotlarından
+
+-asimptot	N;ACC(PL;PSS(1,PL))	asimptotlarımızı
+
+-asimptot	N;ACC(PL;PSS(2,SG))	asimptotlarını
+
+-asimptot	N;ACC(PL;PSS(3,SG))	asimptotlarını
+
+-asimptot	N;ACC(SG)	asimptotu
+
+-asimptot	N;ACC(SG;PSS(2,SG))	asimptotunu
+
+-asimptot	N;DAT(PL;PSS(1,PL))	asimptotlarımıza
+
+-asimptot	N;DAT(PL;PSS(2,SG))	asimptotlarına
+
+-asimptot	N;DAT(SG;PSS(2,PL))	asimptotunuza
+
+-asimptot	N;DAT(SG;PSS(3,SG))	asimptotuna
+
+-asimptot	N;GEN(PL;PSS(1,PL))	asimptotlarımızın
+
+-asimptot	N;GEN(PL;PSS(3,SG))	asimptotlarının
+
+-asimptot	N;GEN(SG;PSS(2,SG))	asimptotunun
+
+-asimptot	N;LOC(PL;PSS(2,SG))	asimptotlarında
+
+-asimptot	N;LOC(SG)	asimptotta
+
+-asimptot	N;LOC(SG;PSS(1,PL))	asimptotumuzda
+
+-asimptot	N;NOM(PL;PSS(1,PL))	asimptotlarımız
+
+-asimptot	N;NOM(PL;PSS(2,PL))	asimptotlarınız
+
++asimptot	N;ABL(PL;PSS(1,PL))	asimptotlerimizden
+
++asimptot	N;ABL(PL;PSS(2,SG))	asimptotlerinden
+
++asimptot	N;ABL(PL;PSS(3,SG))	asimptotlerinden
+
++asimptot	N;ACC(PL;PSS(1,PL))	asimptotlerimizi
+
++asimptot	N;ACC(PL;PSS(2,SG))	asimptotlerini
+
++asimptot	N;ACC(PL;PSS(3,SG))	asimptotlerini
+
++asimptot	N;ACC(SG)	asimptotı
+
++asimptot	N;ACC(SG;PSS(2,SG))	asimptotini
+
++asimptot	N;DAT(PL;PSS(1,PL))	asimptotlerimize
+
++asimptot	N;DAT(PL;PSS(2,SG))	asimptotlerine
+
++asimptot	N;DAT(SG;PSS(2,PL))	asimptotinize
+
++asimptot	N;DAT(SG;PSS(3,SG))	asimptotına
+
++asimptot	N;GEN(PL;PSS(1,PL))	asimptotlerimizin
+
++asimptot	N;GEN(PL;PSS(3,SG))	asimptotlerinin
+
++asimptot	N;GEN(SG;PSS(2,SG))	asimptotinin
+
++asimptot	N;LOC(PL;PSS(2,SG))	asimptotlerinde
+
++asimptot	N;LOC(SG)	asimptotte
+
++asimptot	N;LOC(SG;PSS(1,PL))	asimptotimizde
+
++asimptot	N;NOM(PL;PSS(1,PL))	asimptotlerimiz
+
++asimptot	N;NOM(PL;PSS(2,PL))	asimptotleriniz
+
+ asimptot	N;NOM(SG)	asimptot
+
+-asimptot	N;NOM(SG;PSS(2,PL))	asimptotunuz
+
++asimptot	N;NOM(SG;PSS(2,PL))	asimptotiniz
+
+ ayran	N;ABL(PL)	ayranlardan
+
+ ayran	N;ABL(SG)	ayrandan
+
+ ayran	N;ACC(PL)	ayranları
+
+@@ -76,39 +76,39 @@
+ ayran	N;LOC(SG)	ayranda
+
+ ayran	N;NOM(PL)	ayranlar
+
+ ayran	N;NOM(SG)	ayran
+
+-aşık olmak	V;IND;FUT;PROG;NEG;DECL;NOM(2,SG)	aşık oluyor olmayacaksın
+
++aşık olmak	V;IND;FUT;PROG;NEG;DECL;NOM(2,SG)	aşık olyor olmayacaksın
+
+ aşık olmak	V;IND;FUT;PRSP;INTR;POS;NOM(1,SG)	aşık olacak olacak mıyım
+
+ aşık olmak	V;IND;PRS;HAB;NEG;DECL;NOM(3,SG)	aşık olmaz
+
+-aşık olmak	V;IND;PRS;PROG;NEG;DECL;NOM(3,SG)	aşık olmuyor
+
++aşık olmak	V;IND;PRS;PROG;NEG;DECL;NOM(3,SG)	aşık olmıyor
+
+ aşık olmak	V;IND;PST;PERF;NEG;DECL;NOM(3,SG)	aşık olmadıydı
+
+-aşık olmak	V;IND;PST;PROG;INTR;POS;NOM(2,SG)	aşık oluyor muydun
+
++aşık olmak	V;IND;PST;PROG;INTR;POS;NOM(2,SG)	aşık olıyor muydun
+
+ aşık olmak	V;IND;PST;PROG;NEG;INTR;NOM(2,PL)	aşık olmuyor muydunuz
+
+ aşık olmak	V;IND;PST;PROG;POS;DECL;NOM(3,SG)	aşık oluyordu
+
+-aşık olmak	V;INFR;FUT;HAB;NEG;DECL;NOM(1,SG)	aşık olur olmayacakmışım
+
+-aşık olmak	V;INFR;FUT;PERF;NEG;INTR;NOM(2,PL)	aşık olmuş olmayacak mısınız
+
++aşık olmak	V;INFR;FUT;HAB;NEG;DECL;NOM(1,SG)	aşık olar olmayacakmışım
+
++aşık olmak	V;INFR;FUT;PERF;NEG;INTR;NOM(2,PL)	aşık olmış olmayacak mısınız
+
+ aşık olmak	V;INFR;FUT;PRSP;POS;DECL;NOM(3,PL)	aşık olacak olacaklarmış
+
+-aşık olmak	V;INFR;PRS;HAB;INTR;POS;NOM(3,SG)	aşık olur muymuş
+
++aşık olmak	V;INFR;PRS;HAB;INTR;POS;NOM(3,SG)	aşık olr mıymış
+
+ aşık olmak	V;INFR;PST;NEG;DECL;NOM(3,PL)	aşık olmamışlar
+
+-aşık olmak	V;INFR;PST;PRSP;NEG;INTR;NOM(2,PL)	aşık olmuş olmayacak mıydınız
+
+-aşık olmak	V;INFR;PST;PRSP;POS;DECL;NOM(3,PL)	aşık olmuş olacaklardı
+
+-aşık olmak	V;NEC;INFR;PRS;PROG;NEG;INTR;NOM(1,PL)	aşık oluyor olmamalı mıymışız
+
++aşık olmak	V;INFR;PST;PRSP;NEG;INTR;NOM(2,PL)	aşık olmış olmayacak mıydınız
+
++aşık olmak	V;INFR;PST;PRSP;POS;DECL;NOM(3,PL)	aşık olmış olacaklardı
+
++aşık olmak	V;NEC;INFR;PRS;PROG;NEG;INTR;NOM(1,PL)	aşık olıyor olmamalı mıymışız
+
+ aşık olmak	V;NEC;INFR;PST;INTR;POS;NOM(2,PL)	aşık olmalı mıymışsınız
+
+ aşık olmak	V;NEC;INFR;PST;INTR;POS;NOM(2,SG)	aşık olmalı mıymışsın
+
+ aşık olmak	V;NEC;PRS;INTR;POS;NOM(2,SG)	aşık olmeli misin
+
+ aşık olmak	V;NEC;PRS;NEG;DECL;NOM(2,PL)	aşık olmamelisiniz
+
+-aşık olmak	V;NEC;PRS;PROG;POS;DECL;NOM(3,SG)	aşık oluyor olmalı
+
++aşık olmak	V;NEC;PRS;PROG;POS;DECL;NOM(3,SG)	aşık olyor olmalı
+
+ aşık olmak	V;NEC;PST;NEG;INTR;NOM(1,SG)	aşık olmamalı mıydım
+
+-belirtme hali	N;ABL(PL)	belirtme hallerinden
+
+-belirtme hali	N;ABL(SG)	belirtme halinden
+
+-belirtme hali	N;ACC(PL)	belirtme hallerini
+
+-belirtme hali	N;ACC(SG)	belirtme halini
+
+-belirtme hali	N;DAT(PL)	belirtme hallerine
+
+-belirtme hali	N;DAT(SG)	belirtme haline
+
+-belirtme hali	N;GEN(PL)	belirtme hallerinin
+
++belirtme hali	N;ABL(PL)	belirtme halilerden
+
++belirtme hali	N;ABL(SG)	belirtme haliden
+
++belirtme hali	N;ACC(PL)	belirtme halerini
+
++belirtme hali	N;ACC(SG)	belirtme haliyi
+
++belirtme hali	N;DAT(PL)	belirtme halilere
+
++belirtme hali	N;DAT(SG)	belirtme haliye
+
++belirtme hali	N;GEN(PL)	belirtme halilerin
+
+ belirtme hali	N;GEN(SG)	belirtme halinin
+
+-belirtme hali	N;LOC(PL)	belirtme hallerinde
+
+-belirtme hali	N;LOC(SG)	belirtme halinde
+
+-belirtme hali	N;NOM(PL)	belirtme halleri
+
++belirtme hali	N;LOC(PL)	belirtme halilerde
+
++belirtme hali	N;LOC(SG)	belirtme halide
+
++belirtme hali	N;NOM(PL)	belirtme haliler
+
+ belirtme hali	N;NOM(SG)	belirtme hali
+
+ bilişsel psikoloji	N;ABL(SG)	bilişsel psikolojiden
+
+ bilişsel psikoloji	N;ACC(PL)	bilişsel psikolojileri
+
+@@ -124,13 +124,13 @@
+ bitirmek	V;IND;FUT;POS;DECL;NOM(1,PL)	bitireceğiz
+
+ bitirmek	V;IND;FUT;PROG;NEG;DECL;NOM(1,PL)	bitiriyor olmayacağız
+
+ bitirmek	V;IND;FUT;PROG;NEG;DECL;NOM(2,SG)	bitiriyor olmayacaksın
+
+-bitirmek	V;IND;PRS;HAB;INTR;POS;NOM(2,PL)	bitirir misiniz
+
++bitirmek	V;IND;PRS;HAB;INTR;POS;NOM(2,PL)	bitirer misiniz
+
+ bitirmek	V;IND;PRS;HAB;NEG;INTR;NOM(1,PL)	bitirmez miyiz
+
+ bitirmek	V;IND;PST;HAB;POS;DECL;NOM(2,PL)	bitirirdiniz
+
+-bitirmek	V;IND;PST;HAB;PROG;INTR;POS;NOM(3,SG)	bitiriyor olur muydu
+
+-bitirmek	V;IND;PST;PROG;INTR;POS;NOM(3,SG)	bitiriyor muydu
+
++bitirmek	V;IND;PST;HAB;PROG;INTR;POS;NOM(3,SG)	bitiryor olur muydu
+
++bitirmek	V;IND;PST;PROG;INTR;POS;NOM(3,SG)	bitirüyor muydu
+
+ bitirmek	V;IND;PST;PROG;NEG;DECL;NOM(3,SG)	bitirmiyordu
+
+-bitirmek	V;IND;PST;PRSP;PROG;INTR;POS;NOM(1,SG)	bitiriyor olacak mıydım
+
++bitirmek	V;IND;PST;PRSP;PROG;INTR;POS;NOM(1,SG)	bitiryor olacak mıydım
+
+ bitirmek	V;INFR;FUT;HAB;INTR;POS;NOM(2,SG)	bitirir olacak mıymışsın
+
+ bitirmek	V;INFR;FUT;INTR;POS;NOM(2,SG)	bitirecek miymişsin
+
+ bitirmek	V;INFR;FUT;PROG;NEG;DECL;NOM(1,SG)	bitiriyor olmayacakmışım
+
+@@ -144,47 +144,47 @@
+ bitirmek	V;NEC;PST;NEG;INTR;NOM(2,SG)	bitirmemeli miydin
+
+ bitirmek	V;NEC;PST;POS;DECL;NOM(3,SG)	bitirmeliydi
+
+ büktürmek	V;IND;FUT;NEG;INTR;NOM(2,PL)	büktürmeyecek misiniz
+
+-büktürmek	V;IND;FUT;PRSP;NEG;INTR;NOM(1,SG)	büktürecek olmayacak mıyım
+
++büktürmek	V;IND;FUT;PRSP;NEG;INTR;NOM(1,SG)	büktüryecek olmayacak mıyım
+
+ büktürmek	V;IND;FUT;PRSP;POS;DECL;NOM(3,PL)	büktürecek olacaklar
+
+ büktürmek	V;IND;PST;HAB;PROG;POS;DECL;NOM(3,PL)	büktürüyor olurlardı
+
+ büktürmek	V;IND;PST;INTR;POS;NOM(2,PL)	büktürdünüz mü
+
+ büktürmek	V;IND;PST;PERF;NEG;DECL;NOM(2,PL)	büktürmediydiniz
+
+-büktürmek	V;IND;PST;PROG;NEG;INTR;NOM(3,SG)	büktürmüyor muydu
+
++büktürmek	V;IND;PST;PROG;NEG;INTR;NOM(3,SG)	büktürmiyor muydu
+
+ büktürmek	V;IND;PST;PRSP;PROG;POS;DECL;NOM(1,SG)	büktürüyor olacaktım
+
+-büktürmek	V;INFR;FUT;HAB;NEG;DECL;NOM(3,SG)	büktürür olmayacakmış
+
+-büktürmek	V;INFR;FUT;PERF;NEG;INTR;NOM(2,SG)	büktürmüş olmayacak mısın
+
++büktürmek	V;INFR;FUT;HAB;NEG;DECL;NOM(3,SG)	büktürir olmayacakmış
+
++büktürmek	V;INFR;FUT;PERF;NEG;INTR;NOM(2,SG)	büktürmiş olmayacak mısın
+
+ büktürmek	V;INFR;FUT;PRSP;INTR;POS;NOM(1,SG)	büktürecek olacak mıymışım
+
+ büktürmek	V;INFR;PRS;HAB;NEG;DECL;NOM(1,PL)	büktürmezmişiz
+
+ büktürmek	V;INFR;PRS;HAB;NEG;DECL;NOM(2,SG)	büktürmezmişsin
+
+-büktürmek	V;INFR;PRS;PROG;POS;DECL;NOM(3,PL)	büktürüyorlarmış
+
++büktürmek	V;INFR;PRS;PROG;POS;DECL;NOM(3,PL)	büktüriyorlarmış
+
+ büktürmek	V;INFR;PST;PERF;INTR;POS;NOM(1,SG)	büktürmüş müydüm
+
+ büktürmek	V;INFR;PST;PERF;NEG;DECL;NOM(2,PL)	büktürmemiştiniz
+
+-büktürmek	V;INFR;PST;PRSP;NEG;DECL;NOM(1,PL)	büktürmüş olmayacaktık
+
++büktürmek	V;INFR;PST;PRSP;NEG;DECL;NOM(1,PL)	büktürmiş olmayacaktık
+
+ büktürmek	V;NEC;INFR;PRS;PROG;POS;DECL;NOM(3,PL)	büktürüyor olmalılarmış
+
+ büktürmek	V;NEC;INFR;PST;NEG;DECL;NOM(1,SG)	büktürmemeliymişim
+
+ büktürmek	V;NEC;PRS;INTR;POS;NOM(1,SG)	büktürmeli miyim
+
+-büktürmek	V;NEC;PRS;PROG;NEG;DECL;NOM(3,SG)	büktürüyor olmamalı
+
++büktürmek	V;NEC;PRS;PROG;NEG;DECL;NOM(3,SG)	büktüriyor olmamalı
+
+ büktürmek	V;NEC;PST;POS;DECL;NOM(1,SG)	büktürmeliydim
+
+-bükülmek	V;IND;FUT;PROG;INTR;POS;NOM(1,SG)	bükülüyor olacak mıyım
+
++bükülmek	V;IND;FUT;PROG;INTR;POS;NOM(1,SG)	bükülyor olacak mıyım
+
+ bükülmek	V;IND;PRS;HAB;NEG;INTR;NOM(2,PL)	bükülmez misiniz
+
+ bükülmek	V;IND;PST;HAB;NEG;INTR;NOM(1,PL)	bükülmez miydik
+
+-bükülmek	V;IND;PST;HAB;PROG;NEG;INTR;NOM(2,PL)	bükülüyor olmaz mıydınız
+
++bükülmek	V;IND;PST;HAB;PROG;NEG;INTR;NOM(2,PL)	bükülyor olmaz mıydınız
+
+ bükülmek	V;IND;PST;NEG;INTR;NOM(1,PL)	bükülmedik mi
+
+ bükülmek	V;IND;PST;NEG;INTR;NOM(3,SG)	bükülmedi mi
+
+ bükülmek	V;IND;PST;PERF;NEG;DECL;NOM(1,SG)	bükülmediydim
+
+ bükülmek	V;IND;PST;PERF;NEG;DECL;NOM(3,PL)	bükülmedilerdi
+
+-bükülmek	V;INFR;FUT;HAB;POS;DECL;NOM(1,PL)	bükülür olacakmışız
+
++bükülmek	V;INFR;FUT;HAB;POS;DECL;NOM(1,PL)	bükülir olacakmışız
+
+ bükülmek	V;INFR;FUT;NEG;DECL;NOM(2,PL)	bükülmeyecekmişsiniz
+
+ bükülmek	V;INFR;FUT;NEG;INTR;NOM(1,SG)	bükülmeyecek miymişim
+
+ bükülmek	V;INFR;FUT;PERF;INTR;POS;NOM(3,SG)	bükülmüş olacak mı
+
+ bükülmek	V;INFR;FUT;PRSP;POS;DECL;NOM(1,PL)	bükülecek olacakmışız
+
+ bükülmek	V;INFR;PRS;HAB;INTR;POS;NOM(3,PL)	bükülürler miymiş
+
+ bükülmek	V;INFR;PST;NEG;INTR;NOM(3,SG)	bükülmemiş mi
+
+-bükülmek	V;INFR;PST;POS;DECL;NOM(2,SG)	bükülmüşsün
+
+-bükülmek	V;NEC;INFR;PRS;PROG;NEG;INTR;NOM(3,PL)	bükülüyor olmamalılar mıymış
+
++bükülmek	V;INFR;PST;POS;DECL;NOM(2,SG)	bükülmişsin
+
++bükülmek	V;NEC;INFR;PRS;PROG;NEG;INTR;NOM(3,PL)	büküliyor olmamalılar mıymış
+
+ bükülmek	V;NEC;PRS;INTR;POS;NOM(1,PL)	bükülmeli miyiz
+
+-bükülmek	V;NEC;PRS;PROG;INTR;POS;NOM(2,PL)	bükülüyor olmalı mısınız
+
+-bükülmek	V;NEC;PRS;PROG;NEG;INTR;NOM(2,PL)	bükülüyor olmamalı mısınız
+
++bükülmek	V;NEC;PRS;PROG;INTR;POS;NOM(2,PL)	büküliyor olmalı mısınız
+
++bükülmek	V;NEC;PRS;PROG;NEG;INTR;NOM(2,PL)	bükülyor olmamalı mısınız
+
+ bükülmek	V;NEC;PST;PROG;NEG;DECL;NOM(2,PL)	bükülüyor olmamalıydınız
+
+ disleksi	N;ABL(PL;PSS(2,PL))	disleksilerinizden
+
+ disleksi	N;ABL(PL;PSS(2,SG))	disleksilerinden
+
+@@ -192,33 +192,33 @@
+ disleksi	N;ACC(SG;PSS(1,PL))	disleksimizi
+
+ disleksi	N;ACC(SG;PSS(2,PL))	disleksinizi
+
+ disleksi	N;DAT(PL;PSS(2,SG))	disleksilerine
+
+-disleksi	N;DAT(SG)	disleksiye
+
++disleksi	N;DAT(SG)	disleksine
+
+ disleksi	N;DAT(SG;PSS(2,PL))	disleksinize
+
+ disleksi	N;DAT(SG;PSS(2,SG))	disleksine
+
+-disleksi	N;GEN(PL)	disleksilerin
+
++disleksi	N;GEN(PL)	disleklerinin
+
+ disleksi	N;GEN(PL;PSS(2,PL))	disleksilerinizin
+
+ disleksi	N;GEN(PL;PSS(2,SG))	disleksilerinin
+
+ disleksi	N;GEN(SG;PSS(3,SG))	disleksisinin
+
+-disleksi	N;LOC(PL)	disleksilerde
+
++disleksi	N;LOC(PL)	disleklerinde
+
+ disleksi	N;LOC(PL;PSS(2,PL))	disleksilerinizde
+
+ disleksi	N;LOC(PL;PSS(3,SG))	disleksilerinde
+
+ disleksi	N;LOC(SG;PSS(2,SG))	disleksinde
+
+ disleksi	N;LOC(SG;PSS(3,SG))	disleksisinde
+
+-disleksi	N;NOM(PL)	disleksiler
+
++disleksi	N;NOM(PL)	dislekleri
+
+ disleksi	N;NOM(PL;PSS(2,PL))	disleksileriniz
+
+ disleksi	N;NOM(SG)	disleksi
+
+ disleksi	N;NOM(SG;PSS(1,PL))	disleksimiz
+
+ dövüşmek	V;IND;FUT;INTR;POS;NOM(3,PL)	dövüşecekler mi
+
+-dövüşmek	V;IND;FUT;PROG;POS;DECL;NOM(2,SG)	dövüşüyor olacaksın
+
+-dövüşmek	V;IND;PST;HAB;PROG;POS;DECL;NOM(2,SG)	dövüşüyor olurdun
+
+-dövüşmek	V;IND;PST;INTR;POS;NOM(2,PL)	dövüştünüz mü
+
++dövüşmek	V;IND;FUT;PROG;POS;DECL;NOM(2,SG)	dövüşiyor olacaksın
+
++dövüşmek	V;IND;PST;HAB;PROG;POS;DECL;NOM(2,SG)	dövüşiyor olurdun
+
++dövüşmek	V;IND;PST;INTR;POS;NOM(2,PL)	dövüşiniz mi
+
+ dövüşmek	V;IND;PST;PERF;NEG;DECL;NOM(1,SG)	dövüşmediydim
+
+ dövüşmek	V;IND;PST;PERF;NEG;INTR;NOM(3,SG)	dövüşmedi miydi
+
+ dövüşmek	V;IND;PST;PRSP;NEG;INTR;NOM(2,SG)	dövüşmeyecek miydin
+
+-dövüşmek	V;INFR;FUT;HAB;POS;DECL;NOM(1,PL)	dövüşür olacakmışız
+
++dövüşmek	V;INFR;FUT;HAB;POS;DECL;NOM(1,PL)	dövüşir olacakmışız
+
+ dövüşmek	V;INFR;FUT;NEG;INTR;NOM(1,PL)	dövüşmeyecek miymişiz
+
+ dövüşmek	V;INFR;FUT;PERF;NEG;INTR;NOM(3,SG)	dövüşmüş olmayacak mı
+
+-dövüşmek	V;INFR;FUT;PERF;POS;DECL;NOM(3,SG)	dövüşmüş olacak
+
++dövüşmek	V;INFR;FUT;PERF;POS;DECL;NOM(3,SG)	dövüşmiş olacak
+
+ dövüşmek	V;INFR;FUT;PROG;NEG;INTR;NOM(3,SG)	dövüşüyor olmayacak mıymış
+
+ dövüşmek	V;INFR;FUT;PRSP;INTR;POS;NOM(1,PL)	dövüşecek olacak mıymışız
+
+ dövüşmek	V;INFR;PRS;HAB;NEG;INTR;NOM(3,PL)	dövüşmezler miymiş
+
+@@ -229,136 +229,136 @@
+ dövüşmek	V;INFR;PST;SG;NEG;INTR;NOM(3)	dövüşmemiş miymiş
+
+ dövüşmek	V;NEC;INFR;PST;POS;DECL;NOM(1,PL)	dövüşmeliymişiz
+
+ dövüşmek	V;NEC;PST;NEG;INTR;NOM(1,PL)	dövüşmemeli miydik
+
+-dövüşmek	V;NEC;PST;PROG;POS;DECL;NOM(2,SG)	dövüşüyor olmalıydın
+
+-dürtmek	V;IND;FUT;INTR;POS;NOM(3,SG)	dürtecek mi
+
+-dürtmek	V;IND;FUT;PROG;POS;DECL;NOM(3,PL)	dürtüyor olacaklar
+
++dövüşmek	V;NEC;PST;PROG;POS;DECL;NOM(2,SG)	dövüşiyor olmalıydın
+
++dürtmek	V;IND;FUT;INTR;POS;NOM(3,SG)	dürdecek mi
+
++dürtmek	V;IND;FUT;PROG;POS;DECL;NOM(3,PL)	dürtiyor olacaklar
+
+ dürtmek	V;IND;FUT;PRSP;INTR;POS;NOM(3,PL)	dürtecek olacaklar mı
+
+-dürtmek	V;IND;PRS;HAB;INTR;POS;NOM(3,SG)	dürter mi
+
+-dürtmek	V;IND;PRS;PROG;POS;DECL;NOM(2,SG)	dürtüyorsun
+
++dürtmek	V;IND;PRS;HAB;INTR;POS;NOM(3,SG)	dürtmi
+
++dürtmek	V;IND;PRS;PROG;POS;DECL;NOM(2,SG)	dürtiyorsun
+
+ dürtmek	V;IND;PST;HAB;NEG;INTR;NOM(1,SG)	dürtmez miydim
+
+-dürtmek	V;IND;PST;HAB;PROG;INTR;POS;NOM(1,SG)	dürtüyor olur muydum
+
+-dürtmek	V;IND;PST;HAB;PROG;INTR;POS;NOM(3,PL)	dürtüyor olurlar mıydı
+
+-dürtmek	V;IND;PST;HAB;PROG;INTR;POS;NOM(3,SG)	dürtüyor olur muydu
+
++dürtmek	V;IND;PST;HAB;PROG;INTR;POS;NOM(1,SG)	dürtyor olur muydum
+
++dürtmek	V;IND;PST;HAB;PROG;INTR;POS;NOM(3,PL)	dürtiyor olurlar mıydı
+
++dürtmek	V;IND;PST;HAB;PROG;INTR;POS;NOM(3,SG)	dürtiyor olur muydu
+
+ dürtmek	V;IND;PST;HAB;PROG;NEG;DECL;NOM(3,SG)	dürtüyor olmazdı
+
+ dürtmek	V;IND;PST;PERF;NEG;DECL;NOM(3,PL)	dürtmedilerdi
+
+-dürtmek	V;INFR;FUT;PERF;NEG;DECL;NOM(3,SG)	dürtmüş olmayacak
+
++dürtmek	V;INFR;FUT;PERF;NEG;DECL;NOM(3,SG)	dürtmiş olmayacak
+
+ dürtmek	V;INFR;FUT;PRSP;NEG;DECL;NOM(2,PL)	dürtecek olmayacakmışsınız
+
+ dürtmek	V;INFR;PRS;PROG;INTR;POS;NOM(3,SG)	dürtüyor muymuş
+
+-dürtmek	V;INFR;PRS;PROG;NEG;DECL;NOM(2,PL)	dürtmüyormuşsunuz
+
+-dürtmek	V;INFR;PST;PRSP;INTR;POS;NOM(1,SG)	dürtmüş olacak mıydım
+
++dürtmek	V;INFR;PRS;PROG;NEG;DECL;NOM(2,PL)	dürtmiyormuşsunuz
+
++dürtmek	V;INFR;PST;PRSP;INTR;POS;NOM(1,SG)	dürtmiş olacak mıydım
+
+ dürtmek	V;NEC;INFR;PRS;PROG;INTR;POS;NOM(1,SG)	dürtüyor olmalı mıymışım
+
+-dürtmek	V;NEC;INFR;PRS;PROG;POS;DECL;NOM(2,PL)	dürtüyor olmalıymışsınız
+
++dürtmek	V;NEC;INFR;PRS;PROG;POS;DECL;NOM(2,PL)	dürtiyor olmalıymışsınız
+
+ dürtmek	V;NEC;INFR;PST;INTR;POS;NOM(2,SG)	dürtmeli miymişsin
+
+ dürtmek	V;NEC;INFR;PST;POS;DECL;NOM(2,PL)	dürtmeliymişsiniz
+
+-dürtmek	V;NEC;PRS;PROG;INTR;POS;NOM(1,PL)	dürtüyor olmalı mıyız
+
++dürtmek	V;NEC;PRS;PROG;INTR;POS;NOM(1,PL)	dürtiyor olmalı mıyız
+
+ dürtmek	V;NEC;PST;PROG;NEG;DECL;NOM(3,SG)	dürtüyor olmamalıydı
+
+ düşünmek	V;IND;FUT;POS;DECL;NOM(1,PL)	düşüneceğiz
+
+-düşünmek	V;IND;PRS;HAB;POS;DECL;NOM(3,SG)	düşünür
+
+-düşünmek	V;IND;PRS;PROG;INTR;POS;NOM(1,PL)	düşünüyor muyuz
+
+-düşünmek	V;IND;PST;HAB;PROG;POS;DECL;NOM(1,PL)	düşünüyor olurduk
+
+-düşünmek	V;IND;PST;HAB;PROG;POS;DECL;NOM(2,PL)	düşünüyor olurdunuz
+
+-düşünmek	V;IND;PST;HAB;PROG;POS;DECL;NOM(2,SG)	düşünüyor olurdun
+
+-düşünmek	V;IND;PST;INTR;POS;NOM(2,SG)	düşündün mü
+
+-düşünmek	V;IND;PST;INTR;POS;NOM(3,PL)	düşündüler mi
+
+-düşünmek	V;IND;PST;POS;DECL;NOM(2,SG)	düşündün
+
+-düşünmek	V;IND;PST;POS;DECL;NOM(3,SG)	düşündü
+
++düşünmek	V;IND;PRS;HAB;POS;DECL;NOM(3,SG)	düşünir
+
++düşünmek	V;IND;PRS;PROG;INTR;POS;NOM(1,PL)	düşüniyor muyuz
+
++düşünmek	V;IND;PST;HAB;PROG;POS;DECL;NOM(1,PL)	düşüniyor olurduk
+
++düşünmek	V;IND;PST;HAB;PROG;POS;DECL;NOM(2,PL)	düşünmeor olurdunuz
+
++düşünmek	V;IND;PST;HAB;PROG;POS;DECL;NOM(2,SG)	düşüniyor olurdun
+
++düşünmek	V;IND;PST;INTR;POS;NOM(2,SG)	düşündin mi
+
++düşünmek	V;IND;PST;INTR;POS;NOM(3,PL)	düşündiler mi
+
++düşünmek	V;IND;PST;POS;DECL;NOM(2,SG)	düşüntün
+
++düşünmek	V;IND;PST;POS;DECL;NOM(3,SG)	düşüntü
+
+ düşünmek	V;IND;PST;PRSP;PROG;POS;DECL;NOM(1,PL)	düşünüyor olacaktık
+
+-düşünmek	V;IND;PST;PRSP;PROG;POS;DECL;NOM(2,PL)	düşünüyor olacaktınız
+
+-düşünmek	V;INFR;FUT;PERF;NEG;INTR;NOM(2,SG)	düşünmüş olmayacak mısın
+
+-düşünmek	V;INFR;FUT;PROG;NEG;DECL;NOM(1,PL)	düşünüyor olmayacakmışız
+
++düşünmek	V;IND;PST;PRSP;PROG;POS;DECL;NOM(2,PL)	düşüniyor olacaktınız
+
++düşünmek	V;INFR;FUT;PERF;NEG;INTR;NOM(2,SG)	düşünmiş olmayacak mısın
+
++düşünmek	V;INFR;FUT;PROG;NEG;DECL;NOM(1,PL)	düşüniyor olmayacakmışız
+
+ düşünmek	V;INFR;FUT;PRSP;NEG;INTR;NOM(1,SG)	düşünecek olmayacak mıymışım
+
+ düşünmek	V;INFR;PRS;HAB;NEG;DECL;NOM(3,PL)	düşünmezlermiş
+
+ düşünmek	V;INFR;PST;NEG;DECL;NOM(3,SG)	düşünmemiş
+
+ düşünmek	V;INFR;PST;PERF;NEG;DECL;NOM(1,SG)	düşünmemiştim
+
+ düşünmek	V;NEC;PRS;NEG;INTR;NOM(2,PL)	düşünmemeli misiniz
+
+-düşünmek	V;NEC;PRS;PROG;INTR;POS;NOM(3,PL)	düşünüyor olmalılar mı
+
+-düşünmek	V;NEC;PST;INTR;POS;NOM(1,SG)	düşünmeli miydim
+
++düşünmek	V;NEC;PRS;PROG;INTR;POS;NOM(3,PL)	düşünyor olmalılar mı
+
++düşünmek	V;NEC;PST;INTR;POS;NOM(1,SG)	düşünmelı mıydım
+
+ düşünmek	V;NEC;PST;NEG;INTR;NOM(2,SG)	düşünmemeli miydin
+
+ gelinmek	V;IND;FUT;INTR;POS;NOM(3,SG)	gelinecek mi
+
+ gelinmek	V;IND;FUT;NEG;INTR;NOM(1,PL)	gelinmeyecek miyiz
+
+-gelinmek	V;IND;FUT;PROG;NEG;INTR;NOM(2,SG)	geliniyor olmayacak mısın
+
++gelinmek	V;IND;FUT;PROG;NEG;INTR;NOM(2,SG)	gelinor olmayacak mısın
+
+ gelinmek	V;IND;FUT;PRSP;NEG;DECL;NOM(3,SG)	gelinecek olmayacak
+
+ gelinmek	V;IND;PST;HAB;PROG;NEG;INTR;NOM(3,SG)	geliniyor olmaz mıydı
+
+ gelinmek	V;IND;PST;PERF;NEG;DECL;NOM(2,SG)	gelinmediydin
+
+-gelinmek	V;IND;PST;PROG;INTR;POS;NOM(3,SG)	geliniyor muydu
+
+-gelinmek	V;IND;PST;PRSP;PROG;NEG;DECL;NOM(1,PL)	geliniyor olmayacaktık
+
+-gelinmek	V;INFR;FUT;HAB;NEG;INTR;NOM(1,SG)	gelinir olmayacak mıymışım
+
++gelinmek	V;IND;PST;PROG;INTR;POS;NOM(3,SG)	gelinüyor muydu
+
++gelinmek	V;IND;PST;PRSP;PROG;NEG;DECL;NOM(1,PL)	gelinyor olmayacaktık
+
++gelinmek	V;INFR;FUT;HAB;NEG;INTR;NOM(1,SG)	gelinr olmayacak mıymışım
+
+ gelinmek	V;INFR;FUT;HAB;NEG;INTR;NOM(2,SG)	gelinir olmayacak mıymışsın
+
+ gelinmek	V;INFR;FUT;INTR;POS;NOM(3,PL)	gelinecekler miymiş
+
+ gelinmek	V;INFR;FUT;PERF;POS;DECL;NOM(3,SG)	gelinmiş olacak
+
+-gelinmek	V;INFR;FUT;PROG;NEG;INTR;NOM(2,SG)	geliniyor olmayacak mıymışsın
+
++gelinmek	V;INFR;FUT;PROG;NEG;INTR;NOM(2,SG)	gelinyor olmayacak mıymışsın
+
+ gelinmek	V;INFR;FUT;PRSP;NEG;DECL;NOM(2,SG)	gelinecek olmayacakmışsın
+
+ gelinmek	V;INFR;PRS;HAB;NEG;INTR;NOM(2,SG)	gelinmez miymişsin
+
+-gelinmek	V;INFR;PRS;HAB;POS;DECL;NOM(2,SG)	gelinirmişsin
+
+-gelinmek	V;INFR;PRS;PROG;INTR;POS;NOM(3,SG)	geliniyor muymuş
+
++gelinmek	V;INFR;PRS;HAB;POS;DECL;NOM(2,SG)	gelinrmişsin
+
++gelinmek	V;INFR;PRS;PROG;INTR;POS;NOM(3,SG)	gelinyor muymuş
+
+ gelinmek	V;INFR;PRS;PROG;NEG;DECL;NOM(3,SG)	gelinmiyormuş
+
+ gelinmek	V;INFR;PRS;PROG;NEG;INTR;NOM(2,SG)	gelinmiyor muymuşsun
+
+ gelinmek	V;INFR;PST;POS;DECL;NOM(2,PL)	gelinmişsiniz
+
+ gelinmek	V;INFR;PST;PRSP;INTR;POS;NOM(2,SG)	gelinmiş olacak mıydın
+
+-gelinmek	V;INFR;PST;SG;INTR;POS;NOM(3)	gelinmiş miymiş
+
++gelinmek	V;INFR;PST;SG;INTR;POS;NOM(3)	gelinmüş müymüş
+
+ gülünçleşmek	V;IND;FUT;NEG;DECL;NOM(3,PL)	gülünçleşmeyecekler
+
+ gülünçleşmek	V;IND;FUT;POS;DECL;NOM(1,PL)	gülünçleşeceğiz
+
+ gülünçleşmek	V;IND;PRS;PROG;NEG;DECL;NOM(3,SG)	gülünçleşmiyor
+
+ gülünçleşmek	V;IND;PRS;PROG;NEG;INTR;NOM(1,PL)	gülünçleşmiyor muyuz
+
+-gülünçleşmek	V;IND;PST;HAB;INTR;POS;NOM(2,PL)	gülünçleşir miydiniz
+
++gülünçleşmek	V;IND;PST;HAB;INTR;POS;NOM(2,PL)	gülünçleşer miydiniz
+
+ gülünçleşmek	V;IND;PST;PERF;NEG;DECL;NOM(3,PL)	gülünçleşmedilerdi
+
+ gülünçleşmek	V;IND;PST;PERF;NEG;INTR;NOM(1,PL)	gülünçleşmedi miydik
+
+-gülünçleşmek	V;IND;PST;PROG;NEG;DECL;NOM(1,PL)	gülünçleşmiyorduk
+
+-gülünçleşmek	V;IND;PST;PROG;NEG;INTR;NOM(1,PL)	gülünçleşmiyor muyduk
+
+-gülünçleşmek	V;IND;PST;PRSP;PROG;NEG;INTR;NOM(3,SG)	gülünçleşiyor olmayacak mıydı
+
++gülünçleşmek	V;IND;PST;PROG;NEG;DECL;NOM(1,PL)	gülünçleşmüyorduk
+
++gülünçleşmek	V;IND;PST;PROG;NEG;INTR;NOM(1,PL)	gülünçleşmeyor muyduk
+
++gülünçleşmek	V;IND;PST;PRSP;PROG;NEG;INTR;NOM(3,SG)	gülünçleşüyor olmayacak mıydı
+
+ gülünçleşmek	V;INFR;FUT;NEG;INTR;NOM(3,SG)	gülünçleşmeyecek miymiş
+
+ gülünçleşmek	V;INFR;FUT;PERF;NEG;INTR;NOM(1,PL)	gülünçleşmiş olmayacak mıyız
+
+ gülünçleşmek	V;INFR;PRS;HAB;NEG;DECL;NOM(1,SG)	gülünçleşmezmişim
+
+ gülünçleşmek	V;INFR;PST;PERF;NEG;INTR;NOM(3,PL)	gülünçleşmemişler miydi
+
+-gülünçleşmek	V;INFR;PST;POS;DECL;NOM(1,SG)	gülünçleşmişim
+
+-gülünçleşmek	V;INFR;PST;PRSP;INTR;POS;NOM(1,SG)	gülünçleşmiş olacak mıydım
+
++gülünçleşmek	V;INFR;PST;POS;DECL;NOM(1,SG)	gülünçleşmüşüm
+
++gülünçleşmek	V;INFR;PST;PRSP;INTR;POS;NOM(1,SG)	gülünçleşmüş olacak mıydım
+
+ gülünçleşmek	V;NEC;INFR;PRS;PROG;NEG;DECL;NOM(1,SG)	gülünçleşiyor olmamalıymışım
+
+ gülünçleşmek	V;NEC;INFR;PST;NEG;INTR;NOM(3,SG)	gülünçleşmemeli miymiş
+
+ gülünçleşmek	V;NEC;PRS;NEG;INTR;NOM(3,SG)	gülünçleşmemeli mi
+
+-gülünçleşmek	V;NEC;PRS;PROG;NEG;INTR;NOM(1,PL)	gülünçleşiyor olmamalı mıyız
+
++gülünçleşmek	V;NEC;PRS;PROG;NEG;INTR;NOM(1,PL)	gülünçleşüyor olmamalı mıyız
+
+ gülünçleşmek	V;NEC;PST;PROG;NEG;INTR;NOM(3,SG)	gülünçleşiyor olmamalı mıydı
+
+-heyecanlandırmak	V;IMP;NEG;DECL;NOM(2,PL)	heyecanlandırmayın
+
++heyecanlandırmak	V;IMP;NEG;DECL;NOM(2,PL)	heyecanlandırmayin
+
+ heyecanlandırmak	V;IND;FUT;PROG;POS;DECL;NOM(1,PL)	heyecanlandırıyor olacağız
+
+ heyecanlandırmak	V;IND;PST;HAB;NEG;DECL;NOM(3,PL)	heyecanlandırmazlardı
+
+-heyecanlandırmak	V;IND;PST;PROG;INTR;POS;NOM(1,SG)	heyecanlandırıyor muydum
+
++heyecanlandırmak	V;IND;PST;PROG;INTR;POS;NOM(1,SG)	heyecanlandrıyor muydum
+
+ heyecanlandırmak	V;IND;PST;PRSP;PROG;INTR;POS;NOM(1,SG)	heyecanlandırıyor olacak mıydım
+
+ heyecanlandırmak	V;INFR;FUT;HAB;POS;DECL;NOM(1,SG)	heyecanlandırır olacakmışım
+
+ heyecanlandırmak	V;INFR;FUT;PROG;POS;DECL;NOM(3,PL)	heyecanlandırıyor olacaklarmış
+
+ heyecanlandırmak	V;INFR;FUT;PRSP;NEG;INTR;NOM(3,PL)	heyecanlandıracak olmayacaklar mıymış
+
+ heyecanlandırmak	V;INFR;FUT;PRSP;POS;DECL;NOM(1,SG)	heyecanlandıracak olacakmışım
+
+ heyecanlandırmak	V;INFR;FUT;PRSP;POS;DECL;NOM(2,PL)	heyecanlandıracak olacakmışsınız
+
+-heyecanlandırmak	V;INFR;PRS;HAB;INTR;POS;NOM(2,PL)	heyecanlandırır mıymışsınız
+
++heyecanlandırmak	V;INFR;PRS;HAB;INTR;POS;NOM(2,PL)	heyecanlandırur muymuşsunuz
+
+ heyecanlandırmak	V;INFR;PRS;HAB;POS;DECL;NOM(3,SG)	heyecanlandırırmış
+
+ heyecanlandırmak	V;INFR;PST;PERF;NEG;INTR;NOM(1,PL)	heyecanlandırmamış mıydık
+
+ heyecanlandırmak	V;INFR;PST;PRSP;INTR;POS;NOM(3,SG)	heyecanlandırmış olacak mıydı
+
+ heyecanlandırmak	V;NEC;INFR;PST;POS;DECL;NOM(2,SG)	heyecanlandırmalıymışsın
+
+ heyecanlandırmak	V;NEC;PRS;INTR;POS;NOM(2,PL)	heyecanlandırmeli misiniz
+
+ heyecanlandırmak	V;NEC;PRS;POS;DECL;NOM(1,SG)	heyecanlandırmeliyim
+
+-heyecanlandırmak	V;NEC;PRS;PROG;NEG;DECL;NOM(3,SG)	heyecanlandırıyor olmamalı
+
+-heyecanlandırmak	V;NEC;PRS;PROG;POS;DECL;NOM(2,PL)	heyecanlandırıyor olmalısınız
+
++heyecanlandırmak	V;NEC;PRS;PROG;NEG;DECL;NOM(3,SG)	heyecanlandıryor olmamalı
+
++heyecanlandırmak	V;NEC;PRS;PROG;POS;DECL;NOM(2,PL)	heyecanlandıryor olmalısınız
+
+ heyecanlandırmak	V;NEC;PST;PROG;NEG;DECL;NOM(2,PL)	heyecanlandırıyor olmamalıydınız
+
+ heyecanlandırmak	V;NEC;PST;PROG;NEG;INTR;NOM(2,SG)	heyecanlandırıyor olmamalı mıydın
+
+ ilklendirmek	V;IND;FUT;NEG;INTR;NOM(2,SG)	ilklendirmeyecek misin
+
+ ilklendirmek	V;IND;FUT;PRSP;NEG;DECL;NOM(2,SG)	ilklendirecek olmayacaksın
+
+ ilklendirmek	V;IND;PRS;PROG;POS;DECL;NOM(1,SG)	ilklendiriyorum
+
+ ilklendirmek	V;IND;PST;HAB;PROG;POS;DECL;NOM(2,SG)	ilklendiriyor olurdun
+
+-ilklendirmek	V;IND;PST;PERF;INTR;POS;NOM(1,PL)	ilklendirdi miydik
+
++ilklendirmek	V;IND;PST;PERF;INTR;POS;NOM(1,PL)	ilklendiri miydik
+
+ ilklendirmek	V;IND;PST;POS;DECL;NOM(1,SG)	ilklendirdim
+
+ ilklendirmek	V;IND;PST;PRSP;NEG;DECL;NOM(2,SG)	ilklendirmeyecektin
+
+ ilklendirmek	V;IND;PST;PRSP;POS;DECL;NOM(2,PL)	ilklendirecektiniz
+
+ ilklendirmek	V;IND;PST;PRSP;PROG;INTR;POS;NOM(3,SG)	ilklendiriyor olacak mıydı
+
+ ilklendirmek	V;IND;PST;PRSP;PROG;NEG;INTR;NOM(1,PL)	ilklendiriyor olmayacak mıydık
+
+-ilklendirmek	V;IND;PST;PRSP;PROG;NEG;INTR;NOM(2,PL)	ilklendiriyor olmayacak mıydınız
+
++ilklendirmek	V;IND;PST;PRSP;PROG;NEG;INTR;NOM(2,PL)	ilklendiryor olmayacak mıydınız
+
+ ilklendirmek	V;INFR;FUT;INTR;POS;NOM(3,PL)	ilklendirecekler miymiş
+
+ ilklendirmek	V;INFR;FUT;INTR;POS;NOM(3,SG)	ilklendirecek miymiş
+
+ ilklendirmek	V;INFR;FUT;PERF;NEG;INTR;NOM(2,PL)	ilklendirmiş olmayacak mısınız
+
+ ilklendirmek	V;INFR;PST;INTR;POS;NOM(3,PL)	ilklendirmişler mi
+
+-ilklendirmek	V;INFR;PST;POS;DECL;NOM(1,PL)	ilklendirmişiz
+
++ilklendirmek	V;INFR;PST;POS;DECL;NOM(1,PL)	ilklendirmüşüz
+
+ ilklendirmek	V;INFR;PST;PRSP;INTR;POS;NOM(3,SG)	ilklendirmiş olacak mıydı
+
+ ilklendirmek	V;INFR;PST;PRSP;NEG;INTR;NOM(1,PL)	ilklendirmiş olmayacak mıydık
+
+-ilklendirmek	V;NEC;INFR;PRS;PROG;INTR;POS;NOM(2,SG)	ilklendiriyor olmalı mıymışsın
+
++ilklendirmek	V;NEC;INFR;PRS;PROG;INTR;POS;NOM(2,SG)	ilklendiryor olmalı mıymışsın
+
+ ilklendirmek	V;NEC;PST;POS;DECL;NOM(3,SG)	ilklendirmeliydi
+
+-ilklendirmek	V;NEC;PST;PROG;NEG;DECL;NOM(3,PL)	ilklendiriyor olmamalılardı
+
++ilklendirmek	V;NEC;PST;PROG;NEG;DECL;NOM(3,PL)	ilklendiryor olmamalılardı
+
+ kalpak	N;ABL(PL)	kalpaklardan
+
+ kalpak	N;ABL(PL;PSS(2,PL))	kalpaklarınızdan
+
+ kalpak	N;ABL(PL;PSS(2,SG))	kalpaklarından
+
+@@ -381,24 +381,24 @@
+ kalpak	N;NOM(PL)	kalpaklar
+
+ kalpak	N;NOM(PL;PSS(2,PL))	kalpaklarınız
+
+ kalpak	N;NOM(SG;PSS(1,PL))	kalpağımız
+
+-kaşımak	V;IND;FUT;PRSP;NEG;DECL;NOM(3,SG)	kaşıyacak olmayacak
+
++kaşımak	V;IND;FUT;PRSP;NEG;DECL;NOM(3,SG)	kaşıacak olmayacak
+
+ kaşımak	V;IND;PST;HAB;NEG;DECL;NOM(1,PL)	kaşımazdık
+
+ kaşımak	V;IND;PST;HAB;NEG;INTR;NOM(3,PL)	kaşımazlar mıydı
+
+-kaşımak	V;IND;PST;HAB;POS;DECL;NOM(3,PL)	kaşırlardı
+
++kaşımak	V;IND;PST;HAB;POS;DECL;NOM(3,PL)	kaşıarlardı
+
+ kaşımak	V;IND;PST;HAB;PROG;NEG;INTR;NOM(2,PL)	kaşıyor olmaz mıydınız
+
+ kaşımak	V;IND;PST;INTR;POS;NOM(1,PL)	kaşıdık mı
+
+ kaşımak	V;IND;PST;NEG;INTR;NOM(3,SG)	kaşımadı mı
+
+-kaşımak	V;IND;PST;PERF;INTR;POS;NOM(2,SG)	kaşıdı mıydın
+
++kaşımak	V;IND;PST;PERF;INTR;POS;NOM(2,SG)	kaşıtı mıydın
+
+ kaşımak	V;IND;PST;PERF;NEG;DECL;NOM(3,PL)	kaşımadılardı
+
+ kaşımak	V;IND;PST;PROG;NEG;INTR;NOM(1,SG)	kaşımıyor muydum
+
+ kaşımak	V;INFR;FUT;NEG;INTR;NOM(1,PL)	kaşımayacak mıymışız
+
+-kaşımak	V;INFR;FUT;PERF;INTR;POS;NOM(1,PL)	kaşımış olacak mıyız
+
++kaşımak	V;INFR;FUT;PERF;INTR;POS;NOM(1,PL)	kaşımuş olacak mıyız
+
+ kaşımak	V;INFR;PRS;HAB;INTR;POS;NOM(2,PL)	kaşır mıymışsınız
+
+ kaşımak	V;INFR;PRS;PROG;NEG;DECL;NOM(3,SG)	kaşımıyormuş
+
+-kaşımak	V;INFR;PST;PERF;POS;DECL;NOM(3,SG)	kaşımıştı
+
++kaşımak	V;INFR;PST;PERF;POS;DECL;NOM(3,SG)	kaşımuştu
+
+ kaşımak	V;INFR;PST;PL;NEG;DECL;NOM(3)	kaşımamışlarmış
+
+ kaşımak	V;INFR;PST;PRSP;INTR;POS;NOM(3,SG)	kaşımış olacak mıydı
+
+-kaşımak	V;NEC;INFR;PRS;PROG;POS;DECL;NOM(2,PL)	kaşıyor olmalıymışsınız
+
++kaşımak	V;NEC;INFR;PRS;PROG;POS;DECL;NOM(2,PL)	kaşııyor olmalıymışsınız
+
+ kaşımak	V;NEC;INFR;PST;NEG;INTR;NOM(2,SG)	kaşımamalı mıymışsın
+
+ kaşımak	V;NEC;PRS;NEG;INTR;NOM(3,PL)	kaşımameliler mi
+
+ kaşımak	V;NEC;PST;POS;DECL;NOM(1,PL)	kaşımalıydık
+
+@@ -409,11 +409,11 @@
+ küçüklük	N;ACC(SG)	küçüklüğü
+
+ küçüklük	N;DAT(PL)	küçüklüklere
+
+ küçüklük	N;DAT(SG)	küçüklüğe
+
+-küçüklük	N;GEN(PL)	küçüklüklerin
+
++küçüklük	N;GEN(PL)	küçüklükların
+
+ küçüklük	N;GEN(SG)	küçüklüğün
+
+ küçüklük	N;LOC(PL)	küçüklüklerde
+
+ küçüklük	N;LOC(SG)	küçüklükte
+
+-küçüklük	N;NOM(PL)	küçüklükler
+
++küçüklük	N;NOM(PL)	küçüklüklar
+
+ küçüklük	N;NOM(SG)	küçüklük
+
+ maraton	N;ABL(PL)	maratonlardan
+
+ maraton	N;ABL(PL;PSS(2,PL))	maratonlarınızdan
+
+@@ -421,7 +421,7 @@
+ maraton	N;ABL(SG;PSS(1,PL))	maratonumuzdan
+
+ maraton	N;ABL(SG;PSS(2,SG))	maratonundan
+
+ maraton	N;ACC(PL;PSS(2,PL))	maratonlarınızı
+
+-maraton	N;ACC(SG)	maratonu
+
++maraton	N;ACC(SG)	maratoni
+
+ maraton	N;ACC(SG;PSS(2,PL))	maratonunuzu
+
+ maraton	N;ACC(SG;PSS(2,SG))	maratonunu
+
+ maraton	N;DAT(PL;PSS(1,PL))	maratonlarımıza
+
+@@ -452,41 +452,41 @@
+ meşale	N;LOC(SG;PSS(2,PL))	meşalenizde
+
+ meşale	N;NOM(PL;PSS(2,PL))	meşaleleriniz
+
+ meşale	N;NOM(SG;PSS(2,SG))	meşalen
+
+-meşale	N;PL;IND;PST;NOM(1,PL)	meşalelerdik
+
++meşale	N;PL;IND;PST;NOM(1,PL)	meşalek
+
+ meşale	N;PL;INFR;PST;NOM(1,PL)	meşalelermişiz
+
+ meşale	N;PL;INFR;PST;NOM(2,PL)	meşalelermişsiniz
+
+-meşale	N;PL;PRS;NOM(2,PL)	meşalelersiniz
+
++meşale	N;PL;PRS;NOM(2,PL)	meşalez
+
+ meşale	N;PL;PRS;NOM(2,SG)	meşalelersin
+
+ meşale	N;SG;INFR;PST;NOM(3,PL)	meşaleymişler
+
+-meşale	N;SG;PRS;NOM(2,PL)	meşalesiniz
+
++meşale	N;SG;PRS;NOM(2,PL)	meşalez
+
+ olmak	V;IND;FUT;NEG;DECL;NOM(2,PL)	olmayacaksınız
+
+ olmak	V;IND;FUT;NEG;INTR;NOM(2,SG)	olmayacak mısın
+
+-olmak	V;IND;FUT;PROG;NEG;DECL;NOM(1,PL)	oluyor olmayacağız
+
++olmak	V;IND;FUT;PROG;NEG;DECL;NOM(1,PL)	olıyor olmayacağız
+
+ olmak	V;IND;FUT;PRSP;NEG;DECL;NOM(3,SG)	olacak olmayacak
+
+ olmak	V;IND;PRS;HAB;NEG;INTR;NOM(3,SG)	olmaz mı
+
+ olmak	V;IND;PST;HAB;PROG;NEG;DECL;NOM(1,PL)	oluyor olmazdık
+
+ olmak	V;IND;PST;NEG;DECL;NOM(1,SG)	olmadım
+
+-olmak	V;IND;PST;PERF;POS;DECL;NOM(2,PL)	olduydunuz
+
++olmak	V;IND;PST;PERF;POS;DECL;NOM(2,PL)	oldıydınız
+
+ olmak	V;IND;PST;PRSP;INTR;POS;NOM(1,SG)	olacak mıydım
+
+ olmak	V;IND;PST;PRSP;POS;DECL;NOM(2,PL)	olacaktınız
+
+-olmak	V;INFR;FUT;PERF;POS;DECL;NOM(1,PL)	olmuş olacağız
+
+-olmak	V;INFR;PRS;PROG;INTR;POS;NOM(1,SG)	oluyor muymuşum
+
+-olmak	V;INFR;PRS;PROG;NEG;DECL;NOM(1,SG)	olmuyormuşum
+
++olmak	V;INFR;FUT;PERF;POS;DECL;NOM(1,PL)	olmış olacağız
+
++olmak	V;INFR;PRS;PROG;INTR;POS;NOM(1,SG)	olıyor muymuşum
+
++olmak	V;INFR;PRS;PROG;NEG;DECL;NOM(1,SG)	olmıyormuşum
+
+ olmak	V;INFR;PST;INTR;POS;NOM(1,SG)	olmuş muyum
+
+ olmak	V;INFR;PST;INTR;POS;NOM(3,PL)	olmuşlar mı
+
+ olmak	V;INFR;PST;PL;NEG;INTR;NOM(1)	olmamış mıymışız
+
+-olmak	V;INFR;PST;POS;DECL;NOM(3,PL)	olmuşlar
+
+-olmak	V;INFR;PST;PRSP;INTR;POS;NOM(1,SG)	olmuş olacak mıydım
+
+-olmak	V;INFR;PST;PRSP;NEG;INTR;NOM(1,SG)	olmuş olmayacak mıydım
+
+-olmak	V;NEC;INFR;PRS;PROG;INTR;POS;NOM(2,SG)	oluyor olmalı mıymışsın
+
+-olmak	V;NEC;PRS;PROG;POS;DECL;NOM(2,PL)	oluyor olmalısınız
+
+-olmak	V;NEC;PST;PROG;INTR;POS;NOM(3,SG)	oluyor olmalı mıydı
+
+-onamak	V;IND;FUT;PROG;NEG;DECL;NOM(1,SG)	onuyor olmayacağım
+
++olmak	V;INFR;PST;POS;DECL;NOM(3,PL)	olmışlar
+
++olmak	V;INFR;PST;PRSP;INTR;POS;NOM(1,SG)	olmış olacak mıydım
+
++olmak	V;INFR;PST;PRSP;NEG;INTR;NOM(1,SG)	olmış olmayacak mıydım
+
++olmak	V;NEC;INFR;PRS;PROG;INTR;POS;NOM(2,SG)	olıyor olmalı mıymışsın
+
++olmak	V;NEC;PRS;PROG;POS;DECL;NOM(2,PL)	olyor olmalısınız
+
++olmak	V;NEC;PST;PROG;INTR;POS;NOM(3,SG)	olyor olmalı mıydı
+
++onamak	V;IND;FUT;PROG;NEG;DECL;NOM(1,SG)	onayor olmayacağım
+
+ onamak	V;IND;FUT;PRSP;NEG;INTR;NOM(2,PL)	onayacak olmayacak mısınız
+
+ onamak	V;IND;PRS;HAB;NEG;DECL;NOM(2,PL)	onamazsınız
+
+ onamak	V;IND;PRS;HAB;NEG;INTR;NOM(1,SG)	onamaz mıyım
+
+ onamak	V;IND;PST;HAB;NEG;DECL;NOM(1,SG)	onamazdım
+
+-onamak	V;IND;PST;HAB;POS;DECL;NOM(1,PL)	onardık
+
++onamak	V;IND;PST;HAB;POS;DECL;NOM(1,PL)	onaırdık
+
+ onamak	V;IND;PST;PERF;NEG;INTR;NOM(3,PL)	onamadılar mıydı
+
+ onamak	V;IND;PST;PRSP;PROG;NEG;DECL;NOM(2,SG)	onuyor olmayacaktın
+
+ onamak	V;INFR;FUT;HAB;INTR;POS;NOM(2,PL)	onar olacak mıymışsınız
+
+@@ -499,62 +499,62 @@
+ onamak	V;INFR;PST;PERF;INTR;POS;NOM(3,PL)	onamışlar mıydı
+
+ onamak	V;INFR;PST;PRSP;INTR;POS;NOM(1,PL)	onamış olacak mıydık
+
+ onamak	V;INFR;PST;PRSP;POS;DECL;NOM(2,PL)	onamış olacaktınız
+
+-onamak	V;NEC;INFR;PRS;PROG;INTR;POS;NOM(1,PL)	onuyor olmalı mıymışız
+
++onamak	V;NEC;INFR;PRS;PROG;INTR;POS;NOM(1,PL)	onayor olmalı mıymışız
+
+ onamak	V;NEC;PRS;NEG;INTR;NOM(3,PL)	onamameliler mi
+
+-onamak	V;NEC;PRS;PROG;INTR;POS;NOM(2,SG)	onuyor olmalı mısın
+
++onamak	V;NEC;PRS;PROG;INTR;POS;NOM(2,SG)	onıyor olmalı mısın
+
+ onamak	V;NEC;PST;POS;DECL;NOM(2,SG)	onamalıydın
+
+ otel	N;ABL(PL)	otellerden
+
+ otel	N;ACC(PL;PSS(1,PL))	otellerimizi
+
+ otel	N;ACC(PL;PSS(2,PL))	otellerinizi
+
+ otel	N;ACC(PL;PSS(2,SG))	otellerini
+
+-otel	N;ACC(PL;PSS(3,SG))	otellerini
+
++otel	N;ACC(PL;PSS(3,SG))	otellarını
+
+ otel	N;ACC(SG)	oteli
+
+ otel	N;ACC(SG;PSS(1,PL))	otelimizi
+
+ otel	N;DAT(PL;PSS(2,PL))	otellerinize
+
+ otel	N;DAT(PL;PSS(2,SG))	otellerine
+
+ otel	N;DAT(PL;PSS(3,SG))	otellerine
+
+ otel	N;DAT(SG)	otele
+
+-otel	N;DAT(SG;PSS(2,SG))	oteline
+
+-otel	N;GEN(PL;PSS(2,SG))	otellerinin
+
++otel	N;DAT(SG;PSS(2,SG))	oteluna
+
++otel	N;GEN(PL;PSS(2,SG))	otellarının
+
+ otel	N;GEN(PL;PSS(3,SG))	otellerinin
+
+ otel	N;GEN(SG;PSS(1,PL))	otelimizin
+
+-otel	N;GEN(SG;PSS(2,SG))	otelinin
+
++otel	N;GEN(SG;PSS(2,SG))	otelunun
+
+ otel	N;LOC(PL)	otellerde
+
+ otel	N;LOC(SG)	otelde
+
+ otel	N;NOM(SG)	otel
+
+ otel	N;NOM(SG;PSS(1,PL))	otelimiz
+
+ otel	N;NOM(SG;PSS(2,PL))	oteliniz
+
+-otel	N;NOM(SG;PSS(3,SG))	oteli
+
++otel	N;NOM(SG;PSS(3,SG))	otelu
+
+ otostop	N;ABL(PL)	otostoplardan
+
+ otostop	N;ABL(SG)	otostoptan
+
+ otostop	N;ABL(SG;PSS(1,PL))	otostobumuzdan
+
+-otostop	N;ABL(SG;PSS(2,PL))	otostobunuzdan
+
++otostop	N;ABL(SG;PSS(2,PL))	otostobınızdan
+
+ otostop	N;ACC(PL)	otostopları
+
+ otostop	N;ACC(PL;PSS(2,SG))	otostoplarını
+
+-otostop	N;ACC(SG)	otostobu
+
+-otostop	N;ACC(SG;PSS(2,SG))	otostobunu
+
++otostop	N;ACC(SG)	otostobı
+
++otostop	N;ACC(SG;PSS(2,SG))	otostop
+
+ otostop	N;ACC(SG;PSS(3,SG))	otostobunu
+
+ otostop	N;DAT(PL;PSS(2,PL))	otostoplarınıza
+
+ otostop	N;DAT(PL;PSS(2,SG))	otostoplarına
+
+ otostop	N;DAT(PL;PSS(3,SG))	otostoplarına
+
+-otostop	N;DAT(SG;PSS(3,SG))	otostobuna
+
++otostop	N;DAT(SG;PSS(3,SG))	otostop
+
+ otostop	N;GEN(PL;PSS(1,PL))	otostoplarımızın
+
+ otostop	N;GEN(PL;PSS(2,PL))	otostoplarınızın
+
+-otostop	N;GEN(SG)	otostobun
+
+-otostop	N;GEN(SG;PSS(1,PL))	otostobumuzun
+
+-otostop	N;LOC(SG;PSS(1,PL))	otostobumuzda
+
++otostop	N;GEN(SG)	otostobın
+
++otostop	N;GEN(SG;PSS(1,PL))	otostobımızın
+
++otostop	N;LOC(SG;PSS(1,PL))	otostop
+
+ otostop	N;NOM(PL)	otostoplar
+
+ otostop	N;NOM(PL;PSS(2,PL))	otostoplarınız
+
+ otostop	N;NOM(PL;PSS(3,SG))	otostopları
+
+-otostop	N;NOM(SG;PSS(2,PL))	otostobunuz
+
++otostop	N;NOM(SG;PSS(2,PL))	otostop
+
+ postu deldirmek	V;IMP;NEG;DECL;NOM(2,PL)	postu deldirmeyin
+
+ postu deldirmek	V;IND;FUT;NEG;INTR;NOM(3,SG)	postu deldirmeyecek mi
+
+ postu deldirmek	V;IND;PRS;HAB;NEG;DECL;NOM(1,SG)	postu deldirmem
+
+-postu deldirmek	V;IND;PRS;PROG;INTR;POS;NOM(3,PL)	postu deldiriyorlar mı
+
++postu deldirmek	V;IND;PRS;PROG;INTR;POS;NOM(3,PL)	postu deldiryorlar mı
+
+ postu deldirmek	V;IND;PST;NEG;INTR;NOM(1,PL)	postu deldirmedik mi
+
+-postu deldirmek	V;IND;PST;PROG;NEG;DECL;NOM(1,PL)	postu deldirmiyorduk
+
++postu deldirmek	V;IND;PST;PROG;NEG;DECL;NOM(1,PL)	postu deldirmüyorduk
+
+ postu deldirmek	V;IND;PST;PRSP;NEG;INTR;NOM(1,PL)	postu deldirmeyecek miydik
+
+-postu deldirmek	V;IND;PST;PRSP;PROG;NEG;DECL;NOM(3,SG)	postu deldiriyor olmayacaktı
+
++postu deldirmek	V;IND;PST;PRSP;PROG;NEG;DECL;NOM(3,SG)	postu deldirüyor olmayacaktı
+
+ postu deldirmek	V;INFR;FUT;NEG;DECL;NOM(1,PL)	postu deldirmeyecekmişiz
+
+ postu deldirmek	V;INFR;FUT;PROG;INTR;POS;NOM(2,PL)	postu deldiriyor olacak mıymışsınız
+
+ postu deldirmek	V;INFR;FUT;PRSP;INTR;POS;NOM(3,PL)	postu deldirecek olacaklar mıymış
+
+@@ -568,23 +568,23 @@
+ postu deldirmek	V;NEC;INFR;PRS;PROG;NEG;INTR;NOM(3,PL)	postu deldiriyor olmamalılar mıymış
+
+ postu deldirmek	V;NEC;PRS;NEG;INTR;NOM(3,SG)	postu deldirmemeli mi
+
+ postu deldirmek	V;NEC;PST;PROG;NEG;DECL;NOM(2,PL)	postu deldiriyor olmamalıydınız
+
+-postu deldirmek	V;NEC;PST;PROG;NEG;INTR;NOM(1,PL)	postu deldiriyor olmamalı mıydık
+
+-programlanmak	V;IND;FUT;INTR;POS;NOM(3,PL)	programlanacaklar mı
+
++postu deldirmek	V;NEC;PST;PROG;NEG;INTR;NOM(1,PL)	postu deldiryor olmamalı mıydık
+
++programlanmak	V;IND;FUT;INTR;POS;NOM(3,PL)	programlanyacaklar mı
+
+ programlanmak	V;IND;FUT;NEG;DECL;NOM(1,PL)	programlanmayacağız
+
+ programlanmak	V;IND;FUT;PROG;NEG;INTR;NOM(1,PL)	programlanıyor olmayacak mıyız
+
+-programlanmak	V;IND;FUT;PROG;NEG;INTR;NOM(3,SG)	programlanıyor olmayacak mı
+
++programlanmak	V;IND;FUT;PROG;NEG;INTR;NOM(3,SG)	programlan olmayacak mı
+
+ programlanmak	V;IND;PRS;HAB;NEG;DECL;NOM(2,PL)	programlanmazsınız
+
+ programlanmak	V;IND;PRS;PROG;POS;DECL;NOM(3,SG)	programlanıyor
+
+-programlanmak	V;IND;PST;HAB;INTR;POS;NOM(1,PL)	programlanır mıydık
+
+-programlanmak	V;IND;PST;PROG;POS;DECL;NOM(3,SG)	programlanıyordu
+
++programlanmak	V;IND;PST;HAB;INTR;POS;NOM(1,PL)	programlanr mıydık
+
++programlanmak	V;IND;PST;PROG;POS;DECL;NOM(3,SG)	programlanuyordu
+
+ programlanmak	V;IND;PST;PRSP;INTR;POS;NOM(2,PL)	programlanacak mıydınız
+
+ programlanmak	V;INFR;FUT;PERF;NEG;DECL;NOM(1,SG)	programlanmış olmayacağım
+
+ programlanmak	V;INFR;FUT;PROG;NEG;DECL;NOM(1,SG)	programlanıyor olmayacakmışım
+
+ programlanmak	V;INFR;FUT;PROG;NEG;DECL;NOM(3,PL)	programlanıyor olmayacaklarmış
+
+-programlanmak	V;INFR;FUT;PROG;NEG;INTR;NOM(3,SG)	programlanıyor olmayacak mıymış
+
+-programlanmak	V;INFR;FUT;PRSP;NEG;DECL;NOM(1,PL)	programlanacak olmayacakmışız
+
++programlanmak	V;INFR;FUT;PROG;NEG;INTR;NOM(3,SG)	programlanyor olmayacak mıymış
+
++programlanmak	V;INFR;FUT;PRSP;NEG;DECL;NOM(1,PL)	programlancak olmayacakmışız
+
+ programlanmak	V;INFR;FUT;PRSP;NEG;DECL;NOM(2,PL)	programlanacak olmayacakmışsınız
+
+-programlanmak	V;INFR;PRS;PROG;POS;DECL;NOM(1,SG)	programlanıyormuşum
+
++programlanmak	V;INFR;PRS;PROG;POS;DECL;NOM(1,SG)	programlanuyormuşum
+
+ programlanmak	V;INFR;PST;PERF;POS;DECL;NOM(3,SG)	programlanmıştı
+
+ programlanmak	V;INFR;PST;PL;POS;DECL;NOM(3)	programlanmışlarmış
+
+ programlanmak	V;INFR;PST;PRSP;POS;DECL;NOM(1,SG)	programlanmış olacaktım
+
+@@ -592,74 +592,74 @@
+ programlanmak	V;NEC;INFR;PRS;PROG;POS;DECL;NOM(3,SG)	programlanıyor olmalıymış
+
+ programlanmak	V;NEC;PST;POS;DECL;NOM(1,PL)	programlanmalıydık
+
+ programlattırmak	V;IND;FUT;POS;DECL;NOM(3,PL)	programlattıracaklar
+
+-programlattırmak	V;IND;FUT;PROG;NEG;DECL;NOM(2,PL)	programlattırıyor olmayacaksınız
+
++programlattırmak	V;IND;FUT;PROG;NEG;DECL;NOM(2,PL)	programlattırmayacaksınız
+
+ programlattırmak	V;IND;PST;PRSP;NEG;DECL;NOM(1,PL)	programlattırmayacaktık
+
+ programlattırmak	V;IND;PST;PRSP;POS;DECL;NOM(2,PL)	programlattıracaktınız
+
+-programlattırmak	V;IND;PST;PRSP;PROG;NEG;DECL;NOM(3,SG)	programlattırıyor olmayacaktı
+
++programlattırmak	V;IND;PST;PRSP;PROG;NEG;DECL;NOM(3,SG)	programlattıryor olmayacaktı
+
+ programlattırmak	V;INFR;FUT;HAB;INTR;POS;NOM(2,PL)	programlattırır olacak mıymışsınız
+
+ programlattırmak	V;INFR;FUT;INTR;POS;NOM(2,SG)	programlattıracak mıymışsın
+
+ programlattırmak	V;INFR;FUT;INTR;POS;NOM(3,SG)	programlattıracak mıymış
+
+ programlattırmak	V;INFR;FUT;NEG;INTR;NOM(2,PL)	programlattırmayacak mıymışsınız
+
+-programlattırmak	V;INFR;FUT;PERF;NEG;INTR;NOM(2,SG)	programlattırmış olmayacak mısın
+
+-programlattırmak	V;INFR;FUT;PROG;NEG;INTR;NOM(3,SG)	programlattırıyor olmayacak mıymış
+
++programlattırmak	V;INFR;FUT;PERF;NEG;INTR;NOM(2,SG)	programlattırmuş olmayacak mısın
+
++programlattırmak	V;INFR;FUT;PROG;NEG;INTR;NOM(3,SG)	programlattıryor olmayacak mıymış
+
+ programlattırmak	V;INFR;FUT;PRSP;NEG;DECL;NOM(2,PL)	programlattıracak olmayacakmışsınız
+
+ programlattırmak	V;INFR;FUT;PRSP;NEG;DECL;NOM(2,SG)	programlattıracak olmayacakmışsın
+
+ programlattırmak	V;INFR;FUT;PRSP;NEG;INTR;NOM(2,SG)	programlattıracak olmayacak mıymışsın
+
+ programlattırmak	V;INFR;PST;PL;NEG;INTR;NOM(2)	programlattırmamış mıymışsınız
+
+ programlattırmak	V;INFR;PST;PRSP;NEG;INTR;NOM(2,PL)	programlattırmış olmayacak mıydınız
+
+-programlattırmak	V;INFR;PST;PRSP;NEG;INTR;NOM(3,SG)	programlattırmış olmayacak mıydı
+
+-programlattırmak	V;NEC;INFR;PRS;PROG;INTR;POS;NOM(3,PL)	programlattırıyor olmalılar mıymış
+
++programlattırmak	V;INFR;PST;PRSP;NEG;INTR;NOM(3,SG)	programlattırmuş olmayacak mıydı
+
++programlattırmak	V;NEC;INFR;PRS;PROG;INTR;POS;NOM(3,PL)	programlattıryor olmalılar mıymış
+
+ programlattırmak	V;NEC;PRS;INTR;POS;NOM(3,PL)	programlattırmeliler mi
+
+ programlattırmak	V;NEC;PST;NEG;INTR;NOM(1,SG)	programlattırmamalı mıydım
+
+ programlattırmak	V;NEC;PST;PROG;NEG;DECL;NOM(1,PL)	programlattırıyor olmamalıydık
+
+ pusmak	V;IND;FUT;POS;DECL;NOM(1,PL)	pusacağız
+
+ pusmak	V;IND;FUT;POS;DECL;NOM(2,PL)	pusacaksınız
+
+-pusmak	V;IND;FUT;PROG;POS;DECL;NOM(1,PL)	pusuyor olacağız
+
++pusmak	V;IND;FUT;PROG;POS;DECL;NOM(1,PL)	pusıyor olacağız
+
+ pusmak	V;IND;FUT;PRSP;NEG;DECL;NOM(1,SG)	pusacak olmayacağım
+
+-pusmak	V;IND;PRS;PROG;NEG;INTR;NOM(3,PL)	pusmuyorlar mı
+
++pusmak	V;IND;PRS;PROG;NEG;INTR;NOM(3,PL)	pusmıyorlar mı
+
+ pusmak	V;IND;PST;HAB;POS;DECL;NOM(2,PL)	pusardınız
+
+ pusmak	V;IND;PST;PRSP;POS;DECL;NOM(3,PL)	pusacaklardı
+
+-pusmak	V;IND;PST;PRSP;PROG;INTR;POS;NOM(3,PL)	pusuyor olacaklar mıydı
+
+-pusmak	V;INFR;FUT;HAB;POS;DECL;NOM(2,PL)	pusar olacakmışsınız
+
+-pusmak	V;INFR;FUT;PERF;INTR;POS;NOM(2,SG)	pusmuş olacak mısın
+
++pusmak	V;IND;PST;PRSP;PROG;INTR;POS;NOM(3,PL)	pusıyor olacaklar mıydı
+
++pusmak	V;INFR;FUT;HAB;POS;DECL;NOM(2,PL)	pusır olacakmışsınız
+
++pusmak	V;INFR;FUT;PERF;INTR;POS;NOM(2,SG)	pusmış olacak mısın
+
+ pusmak	V;INFR;FUT;PERF;NEG;INTR;NOM(1,SG)	pusmuş olmayacak mıyım
+
+-pusmak	V;INFR;FUT;PROG;INTR;POS;NOM(2,SG)	pusuyor olacak mıymışsın
+
++pusmak	V;INFR;FUT;PROG;INTR;POS;NOM(2,SG)	pusıyor olacak mıymışsın
+
+ pusmak	V;INFR;FUT;PRSP;POS;DECL;NOM(3,SG)	pusacak olacakmış
+
+-pusmak	V;INFR;PRS;PROG;NEG;DECL;NOM(3,PL)	pusmuyorlarmış
+
++pusmak	V;INFR;PRS;PROG;NEG;DECL;NOM(3,PL)	pusmıyorlarmış
+
+ pusmak	V;INFR;PST;NEG;INTR;NOM(3,PL)	pusmamışlar mı
+
+ pusmak	V;INFR;PST;PL;NEG;DECL;NOM(2)	pusmamışmışsınız
+
+-pusmak	V;INFR;PST;PL;POS;DECL;NOM(3)	pusmuşlarmış
+
++pusmak	V;INFR;PST;PL;POS;DECL;NOM(3)	pusmışlarmış
+
+ pusmak	V;INFR;PST;SG;NEG;DECL;NOM(3)	pusmamışmış
+
+-pusmak	V;NEC;INFR;PRS;PROG;POS;DECL;NOM(3,SG)	pusuyor olmalıymış
+
++pusmak	V;NEC;INFR;PRS;PROG;POS;DECL;NOM(3,SG)	pusıyor olmalıymış
+
+ pusmak	V;NEC;INFR;PST;POS;DECL;NOM(3,SG)	pusmalıymış
+
+ pusmak	V;NEC;PRS;INTR;POS;NOM(1,PL)	pusmeli miyiz
+
+ pusmak	V;NEC;PST;INTR;POS;NOM(2,PL)	pusmalı mıydınız
+
+-sakso	N;ABL(SG;PSS(1,PL))	saksomuzdan
+
+-sakso	N;ABL(SG;PSS(2,SG))	saksondan
+
+-sakso	N;ABL(SG;PSS(3,SG))	saksosundan
+
+-sakso	N;ACC(PL;PSS(1,PL))	saksolarımızı
+
++sakso	N;ABL(SG;PSS(1,PL))	sakson
+
++sakso	N;ABL(SG;PSS(2,SG))	sakson
+
++sakso	N;ABL(SG;PSS(3,SG))	sakson
+
++sakso	N;ACC(PL;PSS(1,PL))	sakso
+
+ sakso	N;ACC(SG)	saksoyu
+
+-sakso	N;ACC(SG;PSS(2,SG))	saksonu
+
++sakso	N;ACC(SG;PSS(2,SG))	sakso
+
+ sakso	N;ACC(SG;PSS(3,SG))	saksosunu
+
+ sakso	N;DAT(PL)	saksolara
+
+-sakso	N;DAT(PL;PSS(3,SG))	saksolarına
+
++sakso	N;DAT(PL;PSS(3,SG))	sakso
+
+ sakso	N;DAT(SG;PSS(1,PL))	saksomuza
+
+ sakso	N;DAT(SG;PSS(2,SG))	saksona
+
+-sakso	N;GEN(SG;PSS(2,SG))	saksonun
+
+-sakso	N;LOC(PL)	saksolarda
+
+-sakso	N;LOC(PL;PSS(2,PL))	saksolarınızda
+
++sakso	N;GEN(SG;PSS(2,SG))	sakso
+
++sakso	N;LOC(PL)	sakso
+
++sakso	N;LOC(PL;PSS(2,PL))	sakso
+
+ sakso	N;LOC(SG;PSS(2,PL))	saksonuzda
+
+-sakso	N;LOC(SG;PSS(2,SG))	saksonda
+
++sakso	N;LOC(SG;PSS(2,SG))	sakso
+
+ sakso	N;NOM(PL;PSS(1,PL))	saksolarımız
+
+ sakso	N;NOM(PL;PSS(3,SG))	saksoları
+
+ sakso	N;NOM(SG)	sakso
+
+-sakso	N;NOM(SG;PSS(2,PL))	saksonuz
+
++sakso	N;NOM(SG;PSS(2,PL))	sakso
+
+ sakso	N;NOM(SG;PSS(2,SG))	sakson
+
+ sakso	N;NOM(SG;PSS(3,SG))	saksosu
+
+ silgi	N;ABL(PL;PSS(1,PL))	silgilerimizden
+
+ silgi	N;ABL(PL;PSS(2,PL))	silgilerinizden
+
+ silgi	N;ABL(SG;PSS(3,SG))	silgisinden
+
+-silgi	N;ACC(PL)	silgileri
+
++silgi	N;ACC(PL)	silgerini
+
+ silgi	N;ACC(SG;PSS(2,SG))	silgini
+
+ silgi	N;DAT(PL;PSS(2,PL))	silgilerinize
+
+ silgi	N;DAT(PL;PSS(2,SG))	silgilerine
+
+@@ -672,14 +672,14 @@
+ silgi	N;NOM(PL;PSS(3,SG))	silgileri
+
+ silgi	N;NOM(SG;PSS(2,SG))	silgin
+
+ silgi	N;PL;IND;PST;NOM(2,SG)	silgilerdin
+
+-silgi	N;PL;IND;PST;NOM(3,SG)	silgilerdi
+
++silgi	N;PL;IND;PST;NOM(3,SG)	silgi
+
+ silgi	N;PL;INFR;PST;NOM(1,SG)	silgilermişim
+
+ silgi	N;PL;PRS;NOM(2,SG)	silgilersin
+
+ silgi	N;PL;PRS;NOM(3,SG)	silgiler
+
+ silgi	N;SG;INFR;PST;NOM(3,PL)	silgiymişler
+
+ siyasetçi	N;ABL(PL)	siyasetçilerden
+
+ siyasetçi	N;ABL(SG)	siyasetçiden
+
+-siyasetçi	N;ACC(PL)	siyasetçileri
+
++siyasetçi	N;ACC(PL)	siyasetçerini
+
+ siyasetçi	N;ACC(SG)	siyasetçiyi
+
+ siyasetçi	N;DAT(PL)	siyasetçilere
+
+ siyasetçi	N;DAT(SG)	siyasetçiye
+
+@@ -690,60 +690,60 @@
+ siyasetçi	N;NOM(PL)	siyasetçiler
+
+ siyasetçi	N;NOM(SG)	siyasetçi
+
+ sözdizimsel tuz	N;ABL(PL)	sözdizimsel tuzlardan
+
+-sözdizimsel tuz	N;ACC(PL)	sözdizimsel tuzları
+
++sözdizimsel tuz	N;ACC(PL)	sözdizimsel tuzleri
+
+ sözdizimsel tuz	N;ACC(SG)	sözdizimsel tuzu
+
+ sözdizimsel tuz	N;DAT(PL)	sözdizimsel tuzlara
+
+ sözdizimsel tuz	N;DAT(SG)	sözdizimsel tuza
+
+-sözdizimsel tuz	N;GEN(PL)	sözdizimsel tuzların
+
+-sözdizimsel tuz	N;GEN(SG)	sözdizimsel tuzun
+
+-sözdizimsel tuz	N;LOC(PL)	sözdizimsel tuzlarda
+
++sözdizimsel tuz	N;GEN(PL)	sözdizimsel tuzlerin
+
++sözdizimsel tuz	N;GEN(SG)	sözdizimsel tuzin
+
++sözdizimsel tuz	N;LOC(PL)	sözdizimsel tuzlerde
+
+ sözdizimsel tuz	N;LOC(SG)	sözdizimsel tuzda
+
+-sözdizimsel tuz	N;NOM(PL)	sözdizimsel tuzlar
+
++sözdizimsel tuz	N;NOM(PL)	sözdizimsel tuzler
+
+ sözdizimsel tuz	N;NOM(SG)	sözdizimsel tuz
+
+-sıvı	N;ABL(PL)	sıvılardan
+
+-sıvı	N;ABL(SG)	sıvıdan
+
+-sıvı	N;ACC(PL)	sıvıları
+
+-sıvı	N;ACC(SG)	sıvıyı
+
+-sıvı	N;DAT(PL)	sıvılara
+
+-sıvı	N;DAT(SG)	sıvıya
+
+-sıvı	N;GEN(PL)	sıvıların
+
++sıvı	N;ABL(PL)	sıvarından
+
++sıvı	N;ABL(SG)	sıvından
+
++sıvı	N;ACC(PL)	sıvarını
+
++sıvı	N;ACC(SG)	sıvını
+
++sıvı	N;DAT(PL)	sıvarına
+
++sıvı	N;DAT(SG)	sıvına
+
++sıvı	N;GEN(PL)	sıvarının
+
+ sıvı	N;GEN(SG)	sıvının
+
+-sıvı	N;LOC(PL)	sıvılarda
+
+-sıvı	N;LOC(SG)	sıvıda
+
+-sıvı	N;NOM(PL)	sıvılar
+
++sıvı	N;LOC(PL)	sıvarında
+
++sıvı	N;LOC(SG)	sıvında
+
++sıvı	N;NOM(PL)	sıvarı
+
+ sıvı	N;NOM(SG)	sıvı
+
+ tatbik	N;ABL(PL;PSS(1,PL))	tatbiklerimizden
+
+ tatbik	N;ABL(PL;PSS(2,SG))	tatbiklerinden
+
+ tatbik	N;ABL(PL;PSS(3,SG))	tatbiklerinden
+
+-tatbik	N;ABL(SG;PSS(2,SG))	tatbikinden
+
++tatbik	N;ABL(SG;PSS(2,SG))	tatbiğinden
+
+ tatbik	N;ACC(PL)	tatbikleri
+
+ tatbik	N;ACC(PL;PSS(3,SG))	tatbiklerini
+
+-tatbik	N;ACC(SG)	tatbiki
+
+-tatbik	N;ACC(SG;PSS(2,PL))	tatbikinizi
+
++tatbik	N;ACC(SG)	tatbiği
+
++tatbik	N;ACC(SG;PSS(2,PL))	tatbiğinizi
+
+ tatbik	N;DAT(PL;PSS(2,PL))	tatbiklerinize
+
+-tatbik	N;DAT(SG;PSS(1,PL))	tatbikimize
+
+-tatbik	N;DAT(SG;PSS(3,SG))	tatbikine
+
++tatbik	N;DAT(SG;PSS(1,PL))	tatbiğimize
+
++tatbik	N;DAT(SG;PSS(3,SG))	tatbiğine
+
+ tatbik	N;GEN(PL;PSS(1,PL))	tatbiklerimizin
+
+ tatbik	N;GEN(PL;PSS(2,PL))	tatbiklerinizin
+
+-tatbik	N;GEN(SG)	tatbikin
+
++tatbik	N;GEN(SG)	tatbiğin
+
+ tatbik	N;LOC(PL;PSS(2,PL))	tatbiklerinizde
+
+ tatbik	N;LOC(SG)	tatbikte
+
+-tatbik	N;LOC(SG;PSS(1,PL))	tatbikimizde
+
+-tatbik	N;LOC(SG;PSS(3,SG))	tatbikinde
+
++tatbik	N;LOC(SG;PSS(1,PL))	tatbiğimizde
+
++tatbik	N;LOC(SG;PSS(3,SG))	tatbiğinde
+
+ tatbik	N;NOM(PL;PSS(1,PL))	tatbiklerimiz
+
+ tatbik	N;NOM(PL;PSS(2,PL))	tatbikleriniz
+
+ tatbik	N;NOM(SG)	tatbik
+
+-tatbik	N;NOM(SG;PSS(1,PL))	tatbikimiz
+
++tatbik	N;NOM(SG;PSS(1,PL))	tatbiğimiz
+
+ türemek	V;IND;PRS;HAB;NEG;INTR;NOM(2,SG)	türemez misin
+
+-türemek	V;IND;PRS;PROG;INTR;POS;NOM(3,PL)	türüyorlar mı
+
++türemek	V;IND;PRS;PROG;INTR;POS;NOM(3,PL)	türeyorlar mı
+
+ türemek	V;IND;PST;NEG;INTR;NOM(2,PL)	türemediniz mi
+
+ türemek	V;IND;PST;NEG;INTR;NOM(3,PL)	türemediler mi
+
+-türemek	V;IND;PST;PROG;NEG;DECL;NOM(1,PL)	türemiyorduk
+
+-türemek	V;INFR;FUT;HAB;INTR;POS;NOM(3,SG)	türer olacak mıymış
+
+-türemek	V;INFR;FUT;HAB;NEG;DECL;NOM(1,PL)	türer olmayacakmışız
+
++türemek	V;IND;PST;PROG;NEG;DECL;NOM(1,PL)	türemüyorduk
+
++türemek	V;INFR;FUT;HAB;INTR;POS;NOM(3,SG)	türeir olacak mıymış
+
++türemek	V;INFR;FUT;HAB;NEG;DECL;NOM(1,PL)	türeir olmayacakmışız
+
+ türemek	V;INFR;FUT;PERF;NEG;INTR;NOM(3,SG)	türemiş olmayacak mı
+
+-türemek	V;INFR;FUT;PROG;INTR;POS;NOM(1,SG)	türüyor olacak mıymışım
+
+-türemek	V;INFR;FUT;PROG;POS;DECL;NOM(3,SG)	türüyor olacakmış
+
++türemek	V;INFR;FUT;PROG;INTR;POS;NOM(1,SG)	türiyor muymuşum
+
++türemek	V;INFR;FUT;PROG;POS;DECL;NOM(3,SG)	türeiyor olacakmış
+
+ türemek	V;INFR;FUT;PRSP;NEG;DECL;NOM(1,PL)	türeecek olmayacakmışız
+
+ türemek	V;INFR;PRS;HAB;NEG;INTR;NOM(2,SG)	türemez miymişsin
+
+ türemek	V;INFR;PST;NEG;DECL;NOM(3,PL)	türememişler
+
+@@ -751,33 +751,33 @@
+ türemek	V;INFR;PST;PRSP;NEG;INTR;NOM(3,SG)	türemiş olmayacak mıydı
+
+ türemek	V;INFR;PST;PRSP;POS;DECL;NOM(2,SG)	türemiş olacaktın
+
+ türemek	V;INFR;PST;SG;POS;DECL;NOM(1)	türemişmişim
+
+-türemek	V;NEC;INFR;PRS;PROG;NEG;DECL;NOM(2,SG)	türüyor olmamalıymışsın
+
++türemek	V;NEC;INFR;PRS;PROG;NEG;DECL;NOM(2,SG)	türiyor olmamalıymışsın
+
+ türemek	V;NEC;INFR;PRS;PROG;POS;DECL;NOM(2,PL)	türüyor olmalıymışsınız
+
+ türemek	V;NEC;INFR;PST;POS;DECL;NOM(1,SG)	türemeliymişim
+
+-türemek	V;NEC;PRS;PROG;NEG;DECL;NOM(3,PL)	türüyor olmamalılar
+
+-türemek	V;NEC;PST;PROG;INTR;POS;NOM(1,PL)	türüyor olmalı mıydık
+
+-tütü	N;ABL(PL;PSS(1,PL))	tütülerimizden
+
++türemek	V;NEC;PRS;PROG;NEG;DECL;NOM(3,PL)	türiyor olmamalılar
+
++türemek	V;NEC;PST;PROG;INTR;POS;NOM(1,PL)	türiyor olmalı mıydık
+
++tütü	N;ABL(PL;PSS(1,PL))	tütün
+
+ tütü	N;ABL(PL;PSS(2,SG))	tütülerinden
+
+-tütü	N;ABL(PL;PSS(3,SG))	tütülerinden
+
++tütü	N;ABL(PL;PSS(3,SG))	tütün
+
+ tütü	N;ABL(SG;PSS(3,SG))	tütüsünden
+
+-tütü	N;ACC(PL)	tütüleri
+
+-tütü	N;ACC(PL;PSS(2,PL))	tütülerinizi
+
+-tütü	N;ACC(SG;PSS(1,PL))	tütümüzü
+
++tütü	N;ACC(PL)	tütlerini
+
++tütü	N;ACC(PL;PSS(2,PL))	tütü
+
++tütü	N;ACC(SG;PSS(1,PL))	tütü
+
+ tütü	N;ACC(SG;PSS(3,SG))	tütüsünü
+
+-tütü	N;DAT(PL)	tütülere
+
++tütü	N;DAT(PL)	tütlerine
+
+ tütü	N;DAT(PL;PSS(2,PL))	tütülerinize
+
+ tütü	N;DAT(SG)	tütüye
+
+-tütü	N;DAT(SG;PSS(2,PL))	tütünüze
+
++tütü	N;DAT(SG;PSS(2,PL))	tütü
+
+ tütü	N;DAT(SG;PSS(3,SG))	tütüsüne
+
+-tütü	N;GEN(PL)	tütülerin
+
++tütü	N;GEN(PL)	tütlerinin
+
+ tütü	N;GEN(SG;PSS(2,PL))	tütünüzün
+
+-tütü	N;GEN(SG;PSS(2,SG))	tütünün
+
++tütü	N;GEN(SG;PSS(2,SG))	tütü
+
+ tütü	N;GEN(SG;PSS(3,SG))	tütüsünün
+
+ tütü	N;LOC(PL;PSS(2,PL))	tütülerinizde
+
+ tütü	N;LOC(PL;PSS(2,SG))	tütülerinde
+
+-tütü	N;NOM(PL)	tütüler
+
+-tütü	N;NOM(PL;PSS(2,SG))	tütülerin
+
+-tütü	N;NOM(PL;PSS(3,SG))	tütüleri
+
++tütü	N;NOM(PL)	tütleri
+
++tütü	N;NOM(PL;PSS(2,SG))	tütün
+
++tütü	N;NOM(PL;PSS(3,SG))	tütü
+
+ verdirmek	V;IND;FUT;PROG;NEG;DECL;NOM(1,PL)	verdiriyor olmayacağız
+
+ verdirmek	V;IND;FUT;PRSP;NEG;INTR;NOM(2,SG)	verdirecek olmayacak mısın
+
+ verdirmek	V;IND;PRS;PROG;NEG;DECL;NOM(2,SG)	verdirmiyorsun
+
+@@ -787,7 +787,7 @@
+ verdirmek	V;IND;PST;PRSP;NEG;DECL;NOM(3,SG)	verdirmeyecekti
+
+ verdirmek	V;IND;PST;PRSP;NEG;INTR;NOM(3,SG)	verdirmeyecek miydi
+
+ verdirmek	V;IND;PST;PRSP;POS;DECL;NOM(2,PL)	verdirecektiniz
+
+-verdirmek	V;IND;PST;PRSP;PROG;INTR;POS;NOM(1,SG)	verdiriyor olacak mıydım
+
++verdirmek	V;IND;PST;PRSP;PROG;INTR;POS;NOM(1,SG)	verdiryor olacak mıydım
+
+ verdirmek	V;INFR;FUT;PERF;NEG;INTR;NOM(3,PL)	verdirmiş olmayacaklar mı
+
+ verdirmek	V;INFR;FUT;PERF;POS;DECL;NOM(1,SG)	verdirmiş olacağım
+
+ verdirmek	V;INFR;FUT;PRSP;NEG;INTR;NOM(1,PL)	verdirecek olmayacak mıymışız
+
+@@ -800,28 +800,28 @@
+ verdirmek	V;NEC;PRS;NEG;DECL;NOM(3,PL)	verdirmemeliler
+
+ verdirmek	V;NEC;PST;NEG;DECL;NOM(3,PL)	verdirmemelilerdi
+
+ verdirmek	V;NEC;PST;PROG;POS;DECL;NOM(3,SG)	verdiriyor olmalıydı
+
+-yontulmak	V;IND;FUT;PROG;INTR;POS;NOM(3,SG)	yontuluyor olacak mı
+
+-yontulmak	V;IND;PRS;HAB;INTR;POS;NOM(2,SG)	yontulur musun
+
+-yontulmak	V;IND;PRS;HAB;INTR;POS;NOM(3,SG)	yontulur mu
+
+-yontulmak	V;IND;PST;HAB;POS;DECL;NOM(2,SG)	yontulurdun
+
+-yontulmak	V;IND;PST;HAB;PROG;NEG;DECL;NOM(1,PL)	yontuluyor olmazdık
+
++yontulmak	V;IND;FUT;PROG;INTR;POS;NOM(3,SG)	yontulıyor olacak mı
+
++yontulmak	V;IND;PRS;HAB;INTR;POS;NOM(2,SG)	yontulr mısın
+
++yontulmak	V;IND;PRS;HAB;INTR;POS;NOM(3,SG)	yontulır mı
+
++yontulmak	V;IND;PST;HAB;POS;DECL;NOM(2,SG)	yontulırdın
+
++yontulmak	V;IND;PST;HAB;PROG;NEG;DECL;NOM(1,PL)	yontulıyor olmazdık
+
+ yontulmak	V;IND;PST;PERF;NEG;DECL;NOM(3,SG)	yontulmadıydı
+
+ yontulmak	V;IND;PST;PERF;NEG;INTR;NOM(1,PL)	yontulmadı mıydık
+
+-yontulmak	V;IND;PST;PERF;POS;DECL;NOM(1,PL)	yontulduyduk
+
+-yontulmak	V;IND;PST;PERF;POS;DECL;NOM(3,SG)	yontulduydu
+
+-yontulmak	V;IND;PST;POS;DECL;NOM(2,SG)	yontuldun
+
+-yontulmak	V;IND;PST;PROG;NEG;INTR;NOM(1,PL)	yontulmuyor muyduk
+
++yontulmak	V;IND;PST;PERF;POS;DECL;NOM(1,PL)	yontulmak
+
++yontulmak	V;IND;PST;PERF;POS;DECL;NOM(3,SG)	yontuldıydı
+
++yontulmak	V;IND;PST;POS;DECL;NOM(2,SG)	yontultın
+
++yontulmak	V;IND;PST;PROG;NEG;INTR;NOM(1,PL)	yontulmıyor muyduk
+
+ yontulmak	V;IND;PST;PROG;POS;DECL;NOM(1,PL)	yontuluyorduk
+
+ yontulmak	V;IND;PST;PROG;POS;DECL;NOM(3,SG)	yontuluyordu
+
+-yontulmak	V;IND;PST;PRSP;POS;DECL;NOM(1,PL)	yontulacaktık
+
+-yontulmak	V;IND;PST;PRSP;PROG;POS;DECL;NOM(3,SG)	yontuluyor olacaktı
+
+-yontulmak	V;INFR;FUT;PROG;NEG;DECL;NOM(3,PL)	yontuluyor olmayacaklarmış
+
++yontulmak	V;IND;PST;PRSP;POS;DECL;NOM(1,PL)	yontulyacaktık
+
++yontulmak	V;IND;PST;PRSP;PROG;POS;DECL;NOM(3,SG)	yontulıyor olacaktı
+
++yontulmak	V;INFR;FUT;PROG;NEG;DECL;NOM(3,PL)	yontulıyor olmayacaklarmış
+
+ yontulmak	V;INFR;FUT;PRSP;NEG;DECL;NOM(2,SG)	yontulacak olmayacakmışsın
+
+-yontulmak	V;INFR;PST;PERF;INTR;POS;NOM(3,SG)	yontulmuş muydu
+
+-yontulmak	V;INFR;PST;PRSP;INTR;POS;NOM(1,PL)	yontulmuş olacak mıydık
+
++yontulmak	V;INFR;PST;PERF;INTR;POS;NOM(3,SG)	yontulmış mıydı
+
++yontulmak	V;INFR;PST;PRSP;INTR;POS;NOM(1,PL)	yontulmış olacak mıydık
+
+ yontulmak	V;NEC;PRS;NEG;INTR;NOM(2,PL)	yontulmameli misiniz
+
+ yontulmak	V;NEC;PST;INTR;POS;NOM(1,SG)	yontulmalı mıydım
+
+-yontulmak	V;NEC;PST;PROG;INTR;POS;NOM(1,PL)	yontuluyor olmalı mıydık
+
++yontulmak	V;NEC;PST;PROG;INTR;POS;NOM(1,PL)	yontulıyor olmalı mıydık
+
+ yılan hikâyesi	N;ABL(PL)	yılan hikâyelerinden
+
+ yılan hikâyesi	N;ABL(SG)	yılan hikâyesinden
+
+ yılan hikâyesi	N;ACC(PL)	yılan hikâyelerini
+
+@@ -834,50 +834,50 @@
+ yılan hikâyesi	N;LOC(SG)	yılan hikâyesinde
+
+ yılan hikâyesi	N;NOM(PL)	yılan hikâyeleri
+
+ yılan hikâyesi	N;NOM(SG)	yılan hikâyesi
+
+-zavar	N;ABL(PL;PSS(2,SG))	zavarlarından
+
++zavar	N;ABL(PL;PSS(2,SG))	zavarlerinden
+
+ zavar	N;ABL(SG;PSS(2,PL))	zavarınızdan
+
+-zavar	N;ABL(SG;PSS(2,SG))	zavarından
+
++zavar	N;ABL(SG;PSS(2,SG))	zavarinden
+
+ zavar	N;ACC(PL)	zavarları
+
+-zavar	N;ACC(PL;PSS(2,SG))	zavarlarını
+
+-zavar	N;ACC(PL;PSS(3,SG))	zavarlarını
+
++zavar	N;ACC(PL;PSS(2,SG))	zavarlerini
+
++zavar	N;ACC(PL;PSS(3,SG))	zavarlerini
+
+ zavar	N;ACC(SG;PSS(1,PL))	zavarımızı
+
+-zavar	N;ACC(SG;PSS(2,SG))	zavarını
+
+-zavar	N;ACC(SG;PSS(3,SG))	zavarını
+
+-zavar	N;DAT(PL)	zavarlara
+
+-zavar	N;DAT(PL;PSS(2,SG))	zavarlarına
+
++zavar	N;ACC(SG;PSS(2,SG))	zavarünü
+
++zavar	N;ACC(SG;PSS(3,SG))	zavarini
+
++zavar	N;DAT(PL)	zavar
+
++zavar	N;DAT(PL;PSS(2,SG))	zavarlerine
+
+ zavar	N;DAT(SG;PSS(3,SG))	zavarına
+
+-zavar	N;GEN(PL;PSS(1,PL))	zavarlarımızın
+
++zavar	N;GEN(PL;PSS(1,PL))	zavarlerimizin
+
+ zavar	N;GEN(SG;PSS(1,PL))	zavarımızın
+
+ zavar	N;GEN(SG;PSS(2,SG))	zavarının
+
+-zavar	N;LOC(PL)	zavarlarda
+
+-zavar	N;LOC(PL;PSS(2,SG))	zavarlarında
+
++zavar	N;LOC(PL)	zavarlerde
+
++zavar	N;LOC(PL;PSS(2,SG))	zavarlerinde
+
+ zavar	N;LOC(SG;PSS(3,SG))	zavarında
+
+ zavar	N;NOM(PL;PSS(1,PL))	zavarlarımız
+
+-zavar	N;NOM(PL;PSS(2,PL))	zavarlarınız
+
++zavar	N;NOM(PL;PSS(2,PL))	zavarleriniz
+
+ zavar	N;NOM(PL;PSS(2,SG))	zavarların
+
+ zavar	N;NOM(SG)	zavar
+
+-çarşaf	N;ABL(PL)	çarşaflardan
+
+-çarşaf	N;ABL(PL;PSS(1,PL))	çarşaflarımızdan
+
+-çarşaf	N;ABL(PL;PSS(2,SG))	çarşaflarından
+
+-çarşaf	N;ABL(SG;PSS(3,SG))	çarşafından
+
++çarşaf	N;ABL(PL)	çarşaflerden
+
++çarşaf	N;ABL(PL;PSS(1,PL))	çarşafn
+
++çarşaf	N;ABL(PL;PSS(2,SG))	çarşafn
+
++çarşaf	N;ABL(SG;PSS(3,SG))	çarşafn
+
+ çarşaf	N;ACC(PL;PSS(3,SG))	çarşaflarını
+
+ çarşaf	N;ACC(SG;PSS(2,SG))	çarşafını
+
+ çarşaf	N;ACC(SG;PSS(3,SG))	çarşafını
+
+-çarşaf	N;DAT(PL;PSS(2,PL))	çarşaflarınıza
+
+-çarşaf	N;DAT(PL;PSS(2,SG))	çarşaflarına
+
++çarşaf	N;DAT(PL;PSS(2,PL))	çarşaf
+
++çarşaf	N;DAT(PL;PSS(2,SG))	çarşaf
+
+ çarşaf	N;DAT(SG;PSS(1,PL))	çarşafımıza
+
+-çarşaf	N;DAT(SG;PSS(2,PL))	çarşafınıza
+
++çarşaf	N;DAT(SG;PSS(2,PL))	çarşaf
+
+ çarşaf	N;DAT(SG;PSS(2,SG))	çarşafına
+
+-çarşaf	N;DAT(SG;PSS(3,SG))	çarşafına
+
+-çarşaf	N;GEN(PL;PSS(1,PL))	çarşaflarımızın
+
++çarşaf	N;DAT(SG;PSS(3,SG))	çarşaf
+
++çarşaf	N;GEN(PL;PSS(1,PL))	çarşafn
+
+ çarşaf	N;GEN(PL;PSS(3,SG))	çarşaflarının
+
+ çarşaf	N;GEN(SG;PSS(3,SG))	çarşafının
+
+ çarşaf	N;LOC(PL;PSS(2,SG))	çarşaflarında
+
+-çarşaf	N;LOC(SG)	çarşafta
+
++çarşaf	N;LOC(SG)	çarşafte
+
+ çarşaf	N;LOC(SG;PSS(1,PL))	çarşafımızda
+
+-çarşaf	N;LOC(SG;PSS(3,SG))	çarşafında
+
++çarşaf	N;LOC(SG;PSS(3,SG))	çarşaf
+
+ çarşaf	N;NOM(PL;PSS(1,PL))	çarşaflarımız
+
+-çarşaf	N;NOM(PL;PSS(2,PL))	çarşaflarınız
+
++çarşaf	N;NOM(PL;PSS(2,PL))	çarşafz
+
+ çılgınlık	N;ABL(PL)	çılgınlıklardan
+
+ çılgınlık	N;ABL(SG)	çılgınlıktan
+
+ çılgınlık	N;ACC(PL)	çılgınlıkları
+
+@@ -895,9 +895,9 @@
+ öfkelendirmek	V;IND;FUT;PRSP;POS;DECL;NOM(1,SG)	öfkelendirecek olacağım
+
+ öfkelendirmek	V;IND;PRS;HAB;NEG;INTR;NOM(2,SG)	öfkelendirmez misin
+
+ öfkelendirmek	V;IND;PRS;HAB;NEG;INTR;NOM(3,PL)	öfkelendirmezler mi
+
+-öfkelendirmek	V;IND;PRS;PROG;INTR;POS;NOM(3,PL)	öfkelendiriyorlar mı
+
++öfkelendirmek	V;IND;PRS;PROG;INTR;POS;NOM(3,PL)	öfkelendiryorlar mı
+
+ öfkelendirmek	V;IND;PST;HAB;NEG;DECL;NOM(1,PL)	öfkelendirmezdik
+
+-öfkelendirmek	V;IND;PST;INTR;POS;NOM(1,PL)	öfkelendirdik mi
+
++öfkelendirmek	V;IND;PST;INTR;POS;NOM(1,PL)	öfkelendirdük mü
+
+ öfkelendirmek	V;IND;PST;PERF;INTR;POS;NOM(3,SG)	öfkelendirdi miydi
+
+ öfkelendirmek	V;IND;PST;PERF;POS;DECL;NOM(1,PL)	öfkelendirdiydik
+
+ öfkelendirmek	V;IND;PST;PROG;NEG;INTR;NOM(1,SG)	öfkelendirmiyor muydum
+
+@@ -905,33 +905,33 @@
+ öfkelendirmek	V;IND;PST;PRSP;NEG;INTR;NOM(1,SG)	öfkelendirmeyecek miydim
+
+ öfkelendirmek	V;INFR;FUT;POS;DECL;NOM(1,SG)	öfkelendirecekmişim
+
+ öfkelendirmek	V;INFR;FUT;POS;DECL;NOM(2,PL)	öfkelendirecekmişsiniz
+
+-öfkelendirmek	V;INFR;FUT;PROG;INTR;POS;NOM(1,SG)	öfkelendiriyor olacak mıymışım
+
++öfkelendirmek	V;INFR;FUT;PROG;INTR;POS;NOM(1,SG)	öfkelendiryor olacak mıymışım
+
+ öfkelendirmek	V;INFR;FUT;PROG;NEG;DECL;NOM(3,SG)	öfkelendiriyor olmayacakmış
+
+-öfkelendirmek	V;INFR;PRS;HAB;INTR;POS;NOM(2,PL)	öfkelendirir miymişsiniz
+
++öfkelendirmek	V;INFR;PRS;HAB;INTR;POS;NOM(2,PL)	öfkelendirr miymişsiniz
+
+ öfkelendirmek	V;INFR;PRS;PROG;NEG;DECL;NOM(3,PL)	öfkelendirmiyorlarmış
+
+ öfkelendirmek	V;INFR;PST;PERF;INTR;POS;NOM(3,PL)	öfkelendirmişler miydi
+
+ öfkelendirmek	V;NEC;PRS;NEG;DECL;NOM(1,PL)	öfkelendirmemeliyiz
+
+ öfkelendirmek	V;NEC;PRS;NEG;INTR;NOM(1,PL)	öfkelendirmemeli miyiz
+
+ ölçmek	V;IND;FUT;INTR;POS;NOM(2,SG)	ölçecek misin
+
+-ölçmek	V;IND;FUT;PROG;NEG;DECL;NOM(3,SG)	ölçüyor olmayacak
+
++ölçmek	V;IND;FUT;PROG;NEG;DECL;NOM(3,SG)	ölçyor olmayacak
+
+ ölçmek	V;IND;FUT;PRSP;INTR;POS;NOM(3,SG)	ölçecek olacak mı
+
+-ölçmek	V;IND;PST;HAB;PROG;POS;DECL;NOM(1,SG)	ölçüyor olurdum
+
++ölçmek	V;IND;PST;HAB;PROG;POS;DECL;NOM(1,SG)	ölçiyor olurdum
+
+ ölçmek	V;IND;PST;PERF;NEG;DECL;NOM(3,PL)	ölçmedilerdi
+
+ ölçmek	V;IND;PST;PERF;NEG;DECL;NOM(3,SG)	ölçmediydi
+
+ ölçmek	V;IND;PST;PROG;NEG;DECL;NOM(1,PL)	ölçmüyorduk
+
+ ölçmek	V;IND;PST;PRSP;INTR;POS;NOM(2,SG)	ölçecek miydin
+
+ ölçmek	V;IND;PST;PRSP;NEG;DECL;NOM(2,PL)	ölçmeyecektiniz
+
+ ölçmek	V;IND;PST;PRSP;POS;DECL;NOM(2,SG)	ölçecektin
+
+-ölçmek	V;INFR;FUT;HAB;NEG;INTR;NOM(3,SG)	ölçer olmayacak mıymış
+
++ölçmek	V;INFR;FUT;HAB;NEG;INTR;NOM(3,SG)	ölçr olmayacak mıymış
+
+ ölçmek	V;INFR;FUT;NEG;INTR;NOM(3,SG)	ölçmeyecek miymiş
+
+-ölçmek	V;INFR;PRS;PROG;POS;DECL;NOM(1,SG)	ölçüyormuşum
+
++ölçmek	V;INFR;PRS;PROG;POS;DECL;NOM(1,SG)	ölçiyormuşum
+
+ ölçmek	V;INFR;PST;PERF;NEG;DECL;NOM(3,PL)	ölçmemişlerdi
+
+-ölçmek	V;INFR;PST;PL;INTR;POS;NOM(2)	ölçmüş müymüşsünüz
+
++ölçmek	V;INFR;PST;PL;INTR;POS;NOM(2)	ölçmiş miymişsiniz
+
+ ölçmek	V;INFR;PST;SG;NEG;DECL;NOM(3)	ölçmemişmiş
+
+-ölçmek	V;NEC;INFR;PRS;PROG;INTR;POS;NOM(1,PL)	ölçüyor olmalı mıymışız
+
++ölçmek	V;NEC;INFR;PRS;PROG;INTR;POS;NOM(1,PL)	ölçiyor olmalı mıymışız
+
+ ölçmek	V;NEC;INFR;PST;INTR;POS;NOM(1,SG)	ölçmeli miymişim
+
+ ölçmek	V;NEC;PRS;NEG;INTR;NOM(3,PL)	ölçmemeliler mi
+
+-ölçmek	V;NEC;PRS;PROG;POS;DECL;NOM(2,PL)	ölçüyor olmalısınız
+
++ölçmek	V;NEC;PRS;PROG;POS;DECL;NOM(2,PL)	ölçor olmalısınız
+
+ ölçmek	V;NEC;PST;INTR;POS;NOM(3,SG)	ölçmeli miydi
+
+ ölçmek	V;NEC;PST;NEG;DECL;NOM(2,PL)	ölçmemeliydiniz
+
+ önbilgi	N;ABL(PL)	önbilgilerden
+
+@@ -961,25 +961,25 @@
+ şaşmak	V;IND;FUT;PROG;POS;DECL;NOM(1,SG)	şaşıyor olacağım
+
+ şaşmak	V;IND;FUT;PRSP;NEG;INTR;NOM(1,PL)	şaşacak olmayacak mıyız
+
+ şaşmak	V;IND;FUT;PRSP;NEG;INTR;NOM(1,SG)	şaşacak olmayacak mıyım
+
+-şaşmak	V;IND;PRS;HAB;INTR;POS;NOM(1,PL)	şaşar mıyız
+
+-şaşmak	V;IND;PST;HAB;POS;DECL;NOM(1,PL)	şaşardık
+
++şaşmak	V;IND;PRS;HAB;INTR;POS;NOM(1,PL)	şaşr mıyız
+
++şaşmak	V;IND;PST;HAB;POS;DECL;NOM(1,PL)	şaşırdık
+
+ şaşmak	V;IND;PST;HAB;POS;DECL;NOM(1,SG)	şaşardım
+
+-şaşmak	V;IND;PST;PERF;INTR;POS;NOM(1,PL)	şaştı mıydık
+
++şaşmak	V;IND;PST;PERF;INTR;POS;NOM(1,PL)	şaşı mıydık
+
+ şaşmak	V;IND;PST;PERF;NEG;DECL;NOM(3,PL)	şaşmadılardı
+
+ şaşmak	V;IND;PST;PRSP;NEG;INTR;NOM(2,PL)	şaşmayacak mıydınız
+
+-şaşmak	V;IND;PST;PRSP;PROG;NEG;INTR;NOM(3,SG)	şaşıyor olmayacak mıydı
+
++şaşmak	V;IND;PST;PRSP;PROG;NEG;INTR;NOM(3,SG)	şaşyor olmayacak mıydı
+
+ şaşmak	V;INFR;PST;PERF;NEG;INTR;NOM(3,PL)	şaşmamışlar mıydı
+
+-şaşmak	V;NEC;INFR;PRS;PROG;INTR;POS;NOM(3,PL)	şaşıyor olmalılar mıymış
+
++şaşmak	V;NEC;INFR;PRS;PROG;INTR;POS;NOM(3,PL)	şaşyor olmalılar mıymış
+
+ şaşmak	V;NEC;INFR;PRS;PROG;NEG;DECL;NOM(1,SG)	şaşıyor olmamalıymışım
+
+-şaşmak	V;NEC;INFR;PRS;PROG;POS;DECL;NOM(2,SG)	şaşıyor olmalıymışsın
+
+-şaşmak	V;NEC;PST;NEG;INTR;NOM(3,SG)	şaşmamalı mıydı
+
++şaşmak	V;NEC;INFR;PRS;PROG;POS;DECL;NOM(2,SG)	şaşyor olmalıymışsın
+
++şaşmak	V;NEC;PST;NEG;INTR;NOM(3,SG)	şaşmameli miydi
+
+ şaşmak	V;NEC;PST;POS;DECL;NOM(2,SG)	şaşmalıydın
+
+ şaşmak	V;NEC;PST;PROG;INTR;POS;NOM(1,SG)	şaşıyor olmalı mıydım
+
+-şaşmak	V;NEC;PST;PROG;NEG;INTR;NOM(3,PL)	şaşıyor olmamalılar mıydı
+
++şaşmak	V;NEC;PST;PROG;NEG;INTR;NOM(3,PL)	şaşyor olmamalılar mıydı
+
+ şeftali	N;ABL(PL;PSS(1,PL))	şeftalilerimizden
+
+ şeftali	N;ABL(SG;PSS(1,PL))	şeftalimizden
+
+ şeftali	N;ABL(SG;PSS(2,SG))	şeftalinden
+
+-şeftali	N;ACC(PL)	şeftalileri
+
++şeftali	N;ACC(PL)	şeftalerini
+
+ şeftali	N;ACC(PL;PSS(1,PL))	şeftalilerimizi
+
+ şeftali	N;ACC(SG;PSS(3,SG))	şeftalisini
+
+ şeftali	N;DAT(PL;PSS(1,PL))	şeftalilerimize
+
