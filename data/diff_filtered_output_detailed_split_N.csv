@@ -1,0 +1,138 @@
+Lemma,Features,Form_minus/Correct,Form_plus/Wrong,Difference,Diff_minus,Diff_plus,Error Analysis
+anahtarlık,"N;DAT(PL;PSS(1,PL))",anahtarlıklarımıza,anahtarlıklerimize,arımıza vs erimize,arımıza,erimize,"First Suffix Added: Plural Suffix (-lar/-ler):
+The last vowel o (back, rounded) requires -lar, not -ler (for front vowels).
+
+Then Add Possessive, Ablative, or Accusative Suffixes:
+Each suffix form depends on the vowel harmony established by the previous suffix.
+Since the first suffix (plural) is mismarked as front, it triggers errors in all subsequent suffixes."
+asimptot,"N;ABL(PL;PSS(1,PL))",asimptotlarımızdan,asimptotlerimizden,arımızda vs erimizde,arımızda,erimizde,
+asimptot,"N;ABL(PL;PSS(2,SG))",asimptotlarından,asimptotlerinden,arında vs erinde,arında,erinde,
+asimptot,"N;ABL(PL;PSS(3,SG))",asimptotlarından,asimptotlerinden,arında vs erinde,arında,erinde,
+asimptot,"N;ACC(PL;PSS(1,PL))",asimptotlarımızı,asimptotlerimizi,arımızı vs erimizi,arımızı,erimizi,
+asimptot,"N;ACC(PL;PSS(2,SG))",asimptotlarını,asimptotlerini,arını vs erini,arını,erini,
+asimptot,"N;ACC(PL;PSS(3,SG))",asimptotlarını,asimptotlerini,arını vs erini,arını,erini,
+asimptot,N;ACC(SG),asimptotu,asimptotı,u vs ı,u,ı,"last vowel o is back and rounded, the correct accusative suffix is -u."
+asimptot,"N;ACC(SG;PSS(2,SG))",asimptotunu,asimptotini,unu vs ini,unu,ini,"1. possessive suffix for 2nd person singular is -un, not -in. 
+2. accusative Suffix: after -un, the last vowel is u (back, rounded). The correct accusative suffix is -u, not -i."
+asimptot,"N;DAT(PL;PSS(1,PL))",asimptotlarımıza,asimptotlerimize,arımıza vs erimize,arımıza,erimize,"First added plural suffix: since last vowel is o(back, rounded), the correct plural suffix is -lar
+This error triggers the subsequent errors in possessive(-imiz/-iniz) and dative case(-e/-a)"
+asimptot,"N;DAT(PL;PSS(2,SG))",asimptotlarına,asimptotlerine,arına vs erine,arına,erine,
+asimptot,"N;DAT(SG;PSS(2,PL))",asimptotunuza,asimptotinize,unuza vs inize,unuza,inize,"For 2nd person plural possessive: Back vowels (a, ı, o, u) → -unuz, The dative suffix matches the last vowel of the possessive form: Back vowels (a, ı, o, u) → -a."
+asimptot,"N;DAT(SG;PSS(3,SG))",asimptotuna,asimptotına,u vs ı,u,ı,"For 3rd person singular possessive: Back vowels (a, ı, o, u) → -u"
+asimptot,"N;GEN(PL;PSS(1,PL))",asimptotlarımızın,asimptotlerimizin,arımızı vs erimizi,arımızı,erimizi,"For plural Back vowels (o) → -lar. Then it triggers errors in all subsequent suffixes. 1st person plural suffix (-ımız), genitive (-ın)"
+asimptot,"N;GEN(PL;PSS(3,SG))",asimptotlarının,asimptotlerinin,arını vs erini,arını,erini,
+asimptot,"N;GEN(SG;PSS(2,SG))",asimptotunun,asimptotinin,unu vs ini,unu,ini,"For 2nd person singular possessive: Back rounded vowel (o) → -un, then genitive -un"
+asimptot,"N;LOC(PL;PSS(2,SG))",asimptotlarında,asimptotlerinde,arında vs erinde,arında,erinde,"For plural Back vowels (o) → -lar. Then it triggers errors in all subsequent suffixes. 2nd person singular suffix (-ın), locative -da"
+asimptot,N;LOC(SG),asimptotta,asimptotte,a vs e,a,e,"For locative suffix, back vowel (o) → -da, because it ends in a voiceless consonant 't', so changed to -ta, which maintains consonant harmony."
+asimptot,"N;LOC(SG;PSS(1,PL))",asimptotumuzda,asimptotimizde,umuzda vs imizde,umuzda,imizde,"For 1st person plural suffix, -umuz"
+asimptot,"N;NOM(PL;PSS(1,PL))",asimptotlarımız,asimptotlerimiz,arımı vs erimi,arımı,erimi,For plural Back vowels (o) → -lar. Then it triggers errors in subsequent suffix: 1st person plural suffix (-ımız)
+asimptot,"N;NOM(PL;PSS(2,PL))",asimptotlarınız,asimptotleriniz,arını vs erini,arını,erini,For plural Back vowels (o) → -lar. Then it triggers errors in subsequent suffix: 2nd person plural suffix (-ınız)
+asimptot,"N;NOM(SG;PSS(2,PL))",asimptotunuz,asimptotiniz,unu vs ini,unu,ini,For 2nd person plural possessive: Back rounded vowel (o) → -unuz
+belirtme hali,N;ABL(PL),belirtme hallerinden,belirtme halilerden,lerin vs iler,lerin,iler,"When the possessive suffix (-i) is dropped to add a plural or case suffix, the front vowel influence remains, i.e. the plural suffix -ler."
+belirtme hali,N;ABL(SG),belirtme halinden,belirtme haliden,n vs,n,,
+belirtme hali,N;ACC(PL),belirtme hallerini,belirtme halerini,vs,,,Missing 'l' when adding plural suffix -ler
+belirtme hali,N;ACC(SG),belirtme halini,belirtme haliyi,n vs y,n,y,"Incorrect accusative suffix application: The correct form adds the possessive suffix '-i' to 'hali' and then the accusative suffix '-ni', forming 'halini'. The wrong form 'haliyi' incorrectly uses a buffer consonant 'y' and misapplies the accusative suffix directly."
+belirtme hali,N;DAT(PL),belirtme hallerine,belirtme halilere,lerin vs iler,lerin,iler,"When the possessive suffix (-i) is dropped to add a plural or case suffix, the front vowel influence remains, i.e. the plural suffix -ler."
+belirtme hali,N;DAT(SG),belirtme haline,belirtme haliye,n vs y,n,y,"Incorrect dative suffix: After adding the possessive suffix '-i' to 'hali', the correct dative suffix is '-ne', forming 'haline'. The wrong form 'haliye' incorrectly uses a buffer 'y' and the suffix '-ye'."
+belirtme hali,N;GEN(PL),belirtme hallerinin,belirtme halilerin,lerin vs iler,lerin,iler,
+belirtme hali,N;LOC(PL),belirtme hallerinde,belirtme halilerde,lerin vs iler,lerin,iler,
+belirtme hali,N;LOC(SG),belirtme halinde,belirtme halide,n vs,n,,
+belirtme hali,N;NOM(PL),belirtme halleri,belirtme haliler,leri vs iler,leri,iler,
+disleksi,N;DAT(SG),disleksiye,disleksine,y vs n,y,n,"Incorrect dative suffix: After the noun ending with a vowel 'i', the correct dative suffix is '-ye', with a buffer 'y', forming 'disleksiye'. The wrong form 'disleksine' incorrectly uses '-ne'."
+disleksi,N;GEN(PL),disleksilerin,disleklerinin,siler vs lerin,siler,lerin,"Incorrect plural formation and genitive suffix: The noun 'disleksi' should retain its full form before adding the plural suffix '-ler', forming 'disleksiler'. The wrong form 'disleklerinin' omits 'si' and misapplies the genitive suffix."
+disleksi,N;LOC(PL),disleksilerde,disleklerinde,siler vs lerin,siler,lerin,"Incorrect plural formation, the noun 'disleksi' should retain its full form before adding the plural suffix '-ler'"
+disleksi,N;NOM(PL),disleksiler,dislekleri,siler vs leri,siler,leri,"Incorrect plural formation, the noun 'disleksi' should retain its full form before adding the plural suffix '-ler'"
+küçüklük,N;GEN(PL),küçüklüklerin,küçüklükların,eri vs arı,eri,arı,
+küçüklük,N;NOM(PL),küçüklükler,küçüklüklar,e vs a,e,a,
+maraton,N;ACC(SG),maratonu,maratoni,u vs i,u,i,
+meşale,"N;PL;IND;PST;NOM(1,PL)",meşale-ler-dik,meşalek,lerdi vs,lerdi,,
+meşale,"N;PL;PRS;NOM(2,PL)",meşale-ler-siniz,meşalez,lersini vs,lersini,,
+meşale,"N;SG;PRS;NOM(2,PL)",meşalesiniz,meşalez,sini vs,sini,,
+otel,"N;ACC(PL;PSS(3,SG))",otellerini,otellarını,erini vs arını,erini,arını,
+otel,"N;DAT(SG;PSS(2,SG))",oteline,oteluna,ine vs una,ine,una,
+otel,"N;GEN(PL;PSS(2,SG))",otellerinin,otellarının,erini vs arını,erini,arını,
+otel,"N;GEN(SG;PSS(2,SG))",otelinin,otelunun,ini vs unu,ini,unu,
+otel,"N;NOM(SG;PSS(3,SG))",oteli,otelu,i vs u,i,u,
+otostop,"N;ABL(SG;PSS(2,PL))",otostobunuzdan,otostobınızdan,unu vs ını,unu,ını,
+otostop,N;ACC(SG),otostobu,otostobı,u vs ı,u,ı,
+otostop,"N;ACC(SG;PSS(2,SG))",otostobunu,otostop,bunu vs p,bunu,p,
+otostop,"N;DAT(SG;PSS(3,SG))",otostobuna,otostop,buna vs p,buna,p,
+otostop,N;GEN(SG),otostobun,otostobın,u vs ı,u,ı,
+otostop,"N;GEN(SG;PSS(1,PL))",otostobumuzun,otostobımızın,umuzu vs ımızı,umuzu,ımızı,
+otostop,"N;LOC(SG;PSS(1,PL))",otostobumuzda,otostop,bumuzda vs p,bumuzda,p,
+otostop,"N;NOM(SG;PSS(2,PL))",otostobunuz,otostop,bunuz vs p,bunuz,p,
+sakso,"N;ABL(SG;PSS(1,PL))",saksomuzdan,sakson,muzda vs,muzda,,
+sakso,"N;ABL(SG;PSS(2,SG))",saksondan,sakson,Identical,Identical,Identical,
+sakso,"N;ABL(SG;PSS(3,SG))",saksosundan,sakson,sunda vs,sunda,,
+sakso,"N;ACC(PL;PSS(1,PL))",saksolarımızı,sakso,Identical,Identical,Identical,
+sakso,"N;ACC(SG;PSS(2,SG))",saksonu,sakso,Identical,Identical,Identical,
+sakso,"N;DAT(PL;PSS(3,SG))",saksolarına,sakso,Identical,Identical,Identical,
+sakso,"N;GEN(SG;PSS(2,SG))",saksonun,sakso,Identical,Identical,Identical,
+sakso,N;LOC(PL),saksolarda,sakso,Identical,Identical,Identical,
+sakso,"N;LOC(PL;PSS(2,PL))",saksolarınızda,sakso,Identical,Identical,Identical,
+sakso,"N;LOC(SG;PSS(2,SG))",saksonda,sakso,Identical,Identical,Identical,
+sakso,"N;NOM(SG;PSS(2,PL))",saksonuz,sakso,Identical,Identical,Identical,
+silgi,N;ACC(PL),silgileri,silgerini,iler vs erin,iler,erin,
+silgi,"N;PL;IND;PST;NOM(3,SG)",silgilerdi,silgi,Identical,Identical,Identical,
+siyasetçi,N;ACC(PL),siyasetçileri,siyasetçerini,iler vs erin,iler,erin,
+sözdizimsel tuz,N;ACC(PL),sözdizimsel tuzları,sözdizimsel tuzleri,arı vs eri,arı,eri,
+sözdizimsel tuz,N;GEN(PL),sözdizimsel tuzların,sözdizimsel tuzlerin,arı vs eri,arı,eri,
+sözdizimsel tuz,N;GEN(SG),sözdizimsel tuzun,sözdizimsel tuzin,u vs i,u,i,
+sözdizimsel tuz,N;LOC(PL),sözdizimsel tuzlarda,sözdizimsel tuzlerde,arda vs erde,arda,erde,
+sözdizimsel tuz,N;NOM(PL),sözdizimsel tuzlar,sözdizimsel tuzler,a vs e,a,e,
+sıvı,N;ABL(PL),sıvılardan,sıvarından,ılar vs arın,ılar,arın,
+sıvı,N;ABL(SG),sıvıdan,sıvından,vs n,,n,
+sıvı,N;ACC(PL),sıvıları,sıvarını,ılar vs arın,ılar,arın,
+sıvı,N;ACC(SG),sıvıyı,sıvını,y vs n,y,n,
+sıvı,N;DAT(PL),sıvılara,sıvarına,ılar vs arın,ılar,arın,
+sıvı,N;DAT(SG),sıvıya,sıvına,y vs n,y,n,
+sıvı,N;GEN(PL),sıvıların,sıvarının,ılar vs arın,ılar,arın,
+sıvı,N;LOC(PL),sıvılarda,sıvarında,ılar vs arın,ılar,arın,
+sıvı,N;LOC(SG),sıvıda,sıvında,vs n,,n,
+sıvı,N;NOM(PL),sıvılar,sıvarı,ılar vs arı,ılar,arı,
+tatbik,"N;ABL(SG;PSS(2,SG))",tatbikinden,tatbiğinden,k vs ğ,k,ğ,
+tatbik,N;ACC(SG),tatbiki,tatbiği,k vs ğ,k,ğ,
+tatbik,"N;ACC(SG;PSS(2,PL))",tatbikinizi,tatbiğinizi,k vs ğ,k,ğ,
+tatbik,"N;DAT(SG;PSS(1,PL))",tatbikimize,tatbiğimize,k vs ğ,k,ğ,
+tatbik,"N;DAT(SG;PSS(3,SG))",tatbikine,tatbiğine,k vs ğ,k,ğ,
+tatbik,N;GEN(SG),tatbikin,tatbiğin,k vs ğ,k,ğ,
+tatbik,"N;LOC(SG;PSS(1,PL))",tatbikimizde,tatbiğimizde,k vs ğ,k,ğ,
+tatbik,"N;LOC(SG;PSS(3,SG))",tatbikinde,tatbiğinde,k vs ğ,k,ğ,
+tatbik,"N;NOM(SG;PSS(1,PL))",tatbikimiz,tatbiğimiz,k vs ğ,k,ğ,
+tütü,"N;ABL(PL;PSS(1,PL))",tütülerimizden,tütün,lerimizde vs,lerimizde,,
+tütü,"N;ABL(PL;PSS(3,SG))",tütülerinden,tütün,lerinde vs,lerinde,,
+tütü,N;ACC(PL),tütüleri,tütlerini,üler vs lerin,üler,lerin,
+tütü,"N;ACC(PL;PSS(2,PL))",tütülerinizi,tütü,Identical,Identical,Identical,
+tütü,"N;ACC(SG;PSS(1,PL))",tütümüzü,tütü,Identical,Identical,Identical,
+tütü,N;DAT(PL),tütülere,tütlerine,üler vs lerin,üler,lerin,
+tütü,"N;DAT(SG;PSS(2,PL))",tütünüze,tütü,Identical,Identical,Identical,
+tütü,N;GEN(PL),tütülerin,tütlerinin,üler vs lerin,üler,lerin,
+tütü,"N;GEN(SG;PSS(2,SG))",tütünün,tütü,Identical,Identical,Identical,
+tütü,N;NOM(PL),tütüler,tütleri,üler vs leri,üler,leri,
+tütü,"N;NOM(PL;PSS(2,SG))",tütülerin,tütün,leri vs,leri,,
+tütü,"N;NOM(PL;PSS(3,SG))",tütüleri,tütü,Identical,Identical,Identical,
+zavar,"N;ABL(PL;PSS(2,SG))",zavarlarından,zavarlerinden,arında vs erinde,arında,erinde,
+zavar,"N;ABL(SG;PSS(2,SG))",zavarından,zavarinden,ında vs inde,ında,inde,
+zavar,"N;ACC(PL;PSS(2,SG))",zavarlarını,zavarlerini,arını vs erini,arını,erini,
+zavar,"N;ACC(PL;PSS(3,SG))",zavarlarını,zavarlerini,arını vs erini,arını,erini,
+zavar,"N;ACC(SG;PSS(2,SG))",zavarını,zavarünü,ını vs ünü,ını,ünü,
+zavar,"N;ACC(SG;PSS(3,SG))",zavarını,zavarini,ını vs ini,ını,ini,
+zavar,N;DAT(PL),zavarlara,zavar,Identical,Identical,Identical,
+zavar,"N;DAT(PL;PSS(2,SG))",zavarlarına,zavarlerine,arına vs erine,arına,erine,
+zavar,"N;GEN(PL;PSS(1,PL))",zavarlarımızın,zavarlerimizin,arımızı vs erimizi,arımızı,erimizi,
+zavar,N;LOC(PL),zavarlarda,zavarlerde,arda vs erde,arda,erde,
+zavar,"N;LOC(PL;PSS(2,SG))",zavarlarında,zavarlerinde,arında vs erinde,arında,erinde,
+zavar,"N;NOM(PL;PSS(2,PL))",zavarlarınız,zavarleriniz,arını vs erini,arını,erini,
+çarşaf,N;ABL(PL),çarşaflardan,çarşaflerden,arda vs erde,arda,erde,
+çarşaf,"N;ABL(PL;PSS(1,PL))",çarşaflarımızdan,çarşafn,larımızda vs,larımızda,,
+çarşaf,"N;ABL(PL;PSS(2,SG))",çarşaflarından,çarşafn,larında vs,larında,,
+çarşaf,"N;ABL(SG;PSS(3,SG))",çarşafından,çarşafn,ında vs,ında,,
+çarşaf,"N;DAT(PL;PSS(2,PL))",çarşaflarınıza,çarşaf,Identical,Identical,Identical,
+çarşaf,"N;DAT(PL;PSS(2,SG))",çarşaflarına,çarşaf,Identical,Identical,Identical,
+çarşaf,"N;DAT(SG;PSS(2,PL))",çarşafınıza,çarşaf,Identical,Identical,Identical,
+çarşaf,"N;DAT(SG;PSS(3,SG))",çarşafına,çarşaf,Identical,Identical,Identical,
+çarşaf,"N;GEN(PL;PSS(1,PL))",çarşaflarımızın,çarşafn,larımızı vs,larımızı,,
+çarşaf,N;LOC(SG),çarşafta,çarşafte,a vs e,a,e,
+çarşaf,"N;LOC(SG;PSS(3,SG))",çarşafında,çarşaf,Identical,Identical,Identical,
+çarşaf,"N;NOM(PL;PSS(2,PL))",çarşaflarınız,çarşafz,larını vs,larını,,
+şeftali,N;ACC(PL),şeftalileri,şeftalerini,iler vs erin,iler,erin,
