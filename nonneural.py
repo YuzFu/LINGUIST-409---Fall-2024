@@ -8,9 +8,8 @@ Modified by: Omer Goldman
 Last Update: 22/03/2021
 """
 
-import sys, os, getopt, re
+import sys, os, getopt
 from functools import wraps
-from glob import glob
 
 
 def hamming(s,t):
@@ -21,19 +20,20 @@ def halign(s,t):
     """Align two strings by Hamming distance."""
     slen = len(s)
     tlen = len(t)
-    minscore = len(s) + len(t) + 1
-    for upad in range(0, len(t)+1):
-        upper = '_' * upad + s + (len(t) - upad) * '_'
-        lower = len(s) * '_' + t
+    minscore = slen + tlen + 1
+
+    for upad in range(0, tlen+1):
+        upper = '_' * upad + s + (tlen - upad) * '_'
+        lower = slen * '_' + t
         score = hamming(upper, lower)
         if score < minscore:
             bu = upper
             bl = lower
             minscore = score
 
-    for lpad in range(0, len(s)+1):
-        upper = len(t) * '_' + s
-        lower = (len(s) - lpad) * '_' + t + '_' * lpad
+    for lpad in range(0, slen+1):
+        upper = tlen * '_' + s
+        lower = (slen - lpad) * '_' + t + '_' * lpad
         score = hamming(upper, lower)
         if score < minscore:
             bu = upper
