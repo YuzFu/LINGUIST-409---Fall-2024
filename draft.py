@@ -46,3 +46,53 @@ with open('data/diff.txt', 'w') as diff_file, open('data/diff_filtered.txt', 'w'
     for rem, add in zip(removed, added):
         filtered_file.write(rem + '\n')
         filtered_file.write(add + '\n')
+
+# codes from google colab, only for archive purpose
+def vowel_categorize(lemma):
+  for char in reversed(lemma):
+    if char in "öü":
+      return {"frontness":True, "roundness":True}
+    elif char in "ei":
+      return {"frontness":True, "roundness":False}
+    elif char in "ou":
+      return {"frontness":False, "roundness":True}
+    elif char in "aı":
+      return {"frontness":False, "roundness":False}
+
+def is_plural(msd):
+  if "(PL" in msd:
+    return True
+  else:
+    return False
+
+def is_str(msd):
+  if "ACC" in msd or "GEN" in msd:
+    return True
+
+def is_obl(msd):
+  if "DAT" in msd or "LOC" in msd or "ABL" in msd:
+    return True
+
+with open('tur.out', 'r') as file:
+    tur_out = [line.strip().split('\t') for line in file if line.strip()]
+
+with open('tur.dev', 'r') as file:
+    tur_dev = [line.strip().split('\t') for line in file if line.strip()]
+
+dev = []
+for word in tur_dev:
+  dev.append(word[2])
+
+for i, line in enumerate(tur_out):
+  lemma, msd, estimation = line[:3]
+  correct = dev[i]
+
+  if msd.startswith('N') & is_plural(msd):
+    if (estimation != correct):
+      # print(lemma, msd, estimation, correct)
+      output = (estimation @ plural_correction_rule)
+      paths = list(output.paths().ostrings())
+      if paths:
+          print(estimation, "→", paths[0])
+      else:
+          print(estimation, "→", "failoutput")
