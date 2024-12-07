@@ -12,11 +12,30 @@ import sys, os, getopt
 from functools import wraps
 
 def hamming(s,t):
+    """
+    This function calculates the hamming distance between two strings.
+
+    Args:
+        s   string 1
+        t   string 2
+
+    Return:  
+        value of hamming distance
+    """
     return sum(1 for x,y in zip(s,t) if x != y)
 
 
 def halign(s,t):
-    """Align two strings by Hamming distance."""
+    """
+    Align two strings by Hamming distance.
+    
+    Args:
+        s   string 1
+        t   string 2
+    
+    Return: 
+        aligned version of the strings 
+    """
     slen = len(s)
     tlen = len(t)
     minscore = slen + tlen + 1
@@ -46,7 +65,9 @@ def halign(s,t):
 
 
 def levenshtein(s, t, inscost = 1.0, delcost = 1.0, substcost = 1.0):
-    """Recursive implementation of Levenshtein, with alignments returned."""
+    """
+    Recursive implementation of Levenshtein, with alignments returned.
+    """
     @memolrec
     def lrec(spast, tpast, srem, trem, cost):
         if len(srem) == 0:
@@ -68,7 +89,9 @@ def levenshtein(s, t, inscost = 1.0, delcost = 1.0, substcost = 1.0):
 
 
 def memolrec(func):
-    """Memoizer for Levenshtein."""
+    """
+    Memoizer for Levenshtein.
+    """
     cache = {}
     @wraps(func)
     def wrap(sp, tp, sr, tr, cost):
@@ -80,11 +103,19 @@ def memolrec(func):
 
 
 def alignprs(lemma, form):
-    """Break lemma/form into three parts:
+    """
+    Break lemma/form into three parts:
     IN:  1 | 2 | 3
     OUT: 4 | 5 | 6
     1/4 are assumed to be prefixes, 2/5 the stem, and 3/6 a suffix.
     1/4 and 3/6 may be empty.
+
+    Args:
+        lemma   input string
+        form    output string
+
+    Return:
+        prefixes, roots, and suffixes of lemma and form respectively
     """
 
     al = levenshtein(lemma, form, substcost = 1.1) # Force preference of 0:x or x:0 by 1.1 cost
@@ -97,8 +128,16 @@ def alignprs(lemma, form):
 
 
 def prefix_suffix_rules_get(lemma, form):
-    """Extract a number of suffix-change and prefix-change rules
-    based on a given example lemma+inflected form."""
+    """
+    Extract a number of suffix-change and prefix-change rules based on a given example lemma+inflected form.
+    
+    Args:
+        lemma   input string
+        form    output string
+    
+    Return:
+        prefix rules and suffix rules generated based on the arguments
+    """
     lp, lr, ls, fp, fr, fs = alignprs(lemma, form)  # Get six parts: three for input, three for output
 
     def generate_rules(ins, outs): # Consolidate the logic for generating rules (iterating, slicing, removing underscores)
@@ -145,9 +184,20 @@ def prefix_suffix_rules_get(lemma, form):
 
 
 def apply_best_rule(lemma, msd, allprules, allsrules):
-    """Applies the longest-matching suffix-changing rule given an input
-    form and the MSD. Length ties in suffix rules are broken by frequency.
-    For prefix-changing rules, only the most frequent rule is chosen."""
+    """
+    Applies the longest-matching suffix-changing rule given an input form and the MSD. 
+    Length ties in suffix rules are broken by frequency. 
+    For prefix-changing rules, only the most frequent rule is chosen.
+    
+    Args:
+        lemma       word to be transformed
+        msd         morphological description of the lemma
+        allprules   set of prefix rules
+        allsrules   set of suffix rules
+    
+    Return:
+        inflected version of the lemma
+    """
 
     bestrulelen = 0
     base = "<" + lemma + ">"
@@ -172,62 +222,31 @@ def apply_best_rule(lemma, msd, allprules, allsrules):
 
 
 def numleadingsyms(s, symbol):
+    """
+    The function counts the leading symbol in a string
+
+    Args:
+        s       string
+        symbol  specific symbol to be counted
+
+    Return:
+        number of symbols
+    """
     return len(s) - len(s.lstrip(symbol))
 
 
 def numtrailingsyms(s, symbol):
+    """
+    The function counts the trailing symbol in a string
+    
+    Args:
+        s       string
+        symbol  specific symbol to be counted
+
+    Return:
+        number of symbols
+    """
     return len(s) - len(s.rstrip(symbol))
-
-# FSA states and transitions for Turkish vowel harmony and suffixation
-turkish_states = set([
-    "pre-root",
-    "1_-B, -R",
-    "3_-B, +R",
-    "2_+B, -R",
-    "4_+B, +R",
-    "5_PL",
-    "6_PL",
-    "7_PSS_non3PL",
-    "8_PSS_non3PL",
-    "9_PSS_3PL",
-    "10_PSS_3PL",
-    "11_str",
-    "12_str",
-    "13_obl",
-    "14_obl"
-])
-
-turkish_sigma = ["i", "u", "ı", "ü", "e", "a", "o", "ö"]
-
-turkish_start_state = "pre-root"
-
-turkish_final_states = set(["11_str", "12_str", "13_obl", "14_obl"])
-
-def is_front_vowel(v):
-    return v in "eiöü"
-
-def is_back_vowel(v):
-    return v in "aıou"
-
-def noun_pl_suffix(lemma):
-    # Find the last vowel in the lemma to determine the correct plural suffix
-    for char in reversed(lemma):
-        if is_back_vowel(char):
-            return "lar"
-        if is_front_vowel(char):
-            return "ler"
-    return ""  # Return empty string if no vowel is found
-
-def noun_pl_correction(output, lemma, msd):
-    suffix_start = len(lemma)
-    suffix = output[suffix_start:]
-
-    expected_suffix = noun_pl_suffix(lemma)
-
-    # Apply correction only if MSD indicates plural noun
-    if "PL" in msd and suffix in ["lar", "ler"] and suffix != expected_suffix:
-        return output[:suffix_start] + expected_suffix
-    return output
 
 ###############################################################################
 
@@ -235,12 +254,16 @@ def main(argv):
     options, remainder = getopt.gnu_getopt(argv[1:], 'ohp:', ['output','help','path='])
     TEST, OUTPUT, HELP, path = False,False, False, 'data/'
     for opt, arg in options:
+        # output prediction results
         if opt in ('-o', '--output'):
             OUTPUT = True
+        # run on test data
         if opt in ('-t', '--test'):
             TEST = True
+        # call for the help document
         if opt in ('-h', '--help'):
             HELP = True
+        # specify the file path of data
         if opt in ('-p', '--path'):
             path = arg
 
@@ -255,6 +278,7 @@ def main(argv):
             print(" -p [path]  data files path. Default is ../data/")
             quit()
 
+    # reading the file to access data
     totalavg, numlang = 0.0, 0
     for lang in [os.path.splitext(d)[0] for d in os.listdir(path) if '.trn' in d]:
         allprules, allsrules = {}, {}
@@ -303,20 +327,15 @@ def main(argv):
         numguesses = 0
         if OUTPUT:
             outfile = open(path + lang + ".out", "w", encoding='utf8')
+        # apply best rules on the leamma based on msd
         for l in devlines:
             lemma, msd, correct = l.split(u'\t')
-#                    lemma, msd, = l.split(u'\t')
             if prefbias > suffbias:
                 lemma = lemma[::-1]
             outform = apply_best_rule(lemma, msd, allprules, allsrules)
             if prefbias > suffbias:
                 outform = outform[::-1]
                 lemma = lemma[::-1]
-
-            # adjustment for turkish before comparing
-            if lang == 'tur' and 'N' in msd and 'PL' in msd:
-                outform = noun_pl_correction(outform, lemma, msd)
-
             if outform == correct:
                 numcorrect += 1
             numguesses += 1
@@ -326,12 +345,14 @@ def main(argv):
         if OUTPUT:
             outfile.close()
 
+        # calculate the accuracy of prediction
         numlang += 1
         totalavg += numcorrect/float(numguesses)
 
         print(lang + ": " + str(str(numcorrect/float(numguesses)))[0:7])
 
     print("Average accuracy", totalavg/float(numlang))
+
 
 if __name__ == "__main__":
     main(sys.argv)
