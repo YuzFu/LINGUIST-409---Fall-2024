@@ -8,8 +8,9 @@ Modified by: Omer Goldman
 Last Update: 22/03/2021
 """
 
-import sys, os, getopt
+import sys, os, getopt, re
 from functools import wraps
+from glob import glob
 
 
 def hamming(s,t):
@@ -20,20 +21,19 @@ def halign(s,t):
     """Align two strings by Hamming distance."""
     slen = len(s)
     tlen = len(t)
-    minscore = slen + tlen + 1
-
-    for upad in range(0, tlen+1):
-        upper = '_' * upad + s + (tlen - upad) * '_'
-        lower = slen * '_' + t
+    minscore = len(s) + len(t) + 1
+    for upad in range(0, len(t)+1):
+        upper = '_' * upad + s + (len(t) - upad) * '_'
+        lower = len(s) * '_' + t
         score = hamming(upper, lower)
         if score < minscore:
             bu = upper
             bl = lower
             minscore = score
 
-    for lpad in range(0, slen+1):
-        upper = tlen * '_' + s
-        lower = (slen - lpad) * '_' + t + '_' * lpad
+    for lpad in range(0, len(s)+1):
+        upper = len(t) * '_' + s
+        lower = (len(s) - lpad) * '_' + t + '_' * lpad
         score = hamming(upper, lower)
         if score < minscore:
             bu = upper
@@ -156,62 +156,12 @@ def numleadingsyms(s, symbol):
 def numtrailingsyms(s, symbol):
     return len(s) - len(s.rstrip(symbol))
 
-# FSA states and transitions for Turkish vowel harmony and suffixation
-turkish_states = set([
-    "pre-root",
-    "1_-B, -R",
-    "3_-B, +R",
-    "2_+B, -R",
-    "4_+B, +R",
-    "5_PL",
-    "6_PL",
-    "7_PSS_non3PL",
-    "8_PSS_non3PL",
-    "9_PSS_3PL",
-    "10_PSS_3PL",
-    "11_str",
-    "12_str",
-    "13_obl",
-    "14_obl"
-])
-
-turkish_sigma = ["i", "u", "ı", "ü", "e", "a", "o", "ö"]
-
-turkish_start_state = "pre-root"
-
-turkish_final_states = set(["11_str", "12_str", "13_obl", "14_obl"])
-
-def is_front_vowel(v):
-    return v in "eiöü"
-
-def is_back_vowel(v):
-    return v in "aıou"
-
-def noun_pl_suffix(lemma):
-    # Find the last vowel in the lemma to determine the correct plural suffix
-    for char in reversed(lemma):
-        if is_back_vowel(char):
-            return "lar"
-        if is_front_vowel(char):
-            return "ler"
-    return ""  # Return empty string if no vowel is found
-
-def noun_pl_correction(output, lemma, msd):
-    suffix_start = len(lemma)
-    suffix = output[suffix_start:]
-
-    expected_suffix = noun_pl_suffix(lemma)
-
-    # Apply correction only if MSD indicates plural noun
-    if "PL" in msd and suffix in ["lar", "ler"] and suffix != expected_suffix:
-        return output[:suffix_start] + expected_suffix
-    return output
-
 ###############################################################################
+
 
 def main(argv):
     options, remainder = getopt.gnu_getopt(argv[1:], 'ohp:', ['output','help','path='])
-    TEST, OUTPUT, HELP, path = False,False, False, 'data/'
+    TEST, OUTPUT, HELP, path = False,False, False, '../data/'
     for opt, arg in options:
         if opt in ('-o', '--output'):
             OUTPUT = True
@@ -290,11 +240,6 @@ def main(argv):
             if prefbias > suffbias:
                 outform = outform[::-1]
                 lemma = lemma[::-1]
-
-            # adjustment for turkish before comparing
-            if lang == 'tur' and 'N' in msd and 'PL' in msd:
-                outform = noun_pl_correction(outform, lemma, msd)
-
             if outform == correct:
                 numcorrect += 1
             numguesses += 1
@@ -310,6 +255,7 @@ def main(argv):
         print(lang + ": " + str(str(numcorrect/float(numguesses)))[0:7])
 
     print("Average accuracy", totalavg/float(numlang))
+
 
 if __name__ == "__main__":
     main(sys.argv)

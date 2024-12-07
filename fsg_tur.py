@@ -1,3 +1,55 @@
+# 12/06 update
+# this is for adding noun plural suffix
+import pynini
+
+# Define Turkish alphabet
+turkish_alphabet = "abcçdefgğhıijklmnoöprsştuüvyz " # add " "(space), so it includes word compounds, like "sözdizimsel tuzlerde" etc.
+sigma = pynini.union(*turkish_alphabet).closure()
+
+# Vowel transducer a
+# plural_correction_a = pynini.union(pynini.cross(pynini.union(*vowels).closure, "a"),)
+
+# Vowel transducer e
+# plural_correction_e = pynini.union(pynini.cross(pynini.union(*vowels).closure, "e"),)
+
+# Plural suffix context for a
+plural_correction_rule_a = pynini.cdrewrite(
+        pynini.cross("e", "a"),
+        "l",    
+        "r",    
+        sigma)
+
+# Plural suffix context for e
+plural_correction_rule_e = pynini.cdrewrite(
+        pynini.cross("a", "e"),
+        "l",
+        "r",
+        sigma)
+
+# Process
+for i, line in enumerate(tur_out):
+  lemma, msd, inflected = line[:3]
+  correct = dev[i]
+
+  if msd.startswith("N") and '(PL' in msd:
+    v_cat = n_vowel_categorize(lemma)
+
+    if v_cat["frontness"] == False and "ler" in inflected:
+      output = inflected @ plural_correction_rule_a
+      paths = list(output.paths().ostrings())
+      correction = paths[0]
+      print(lemma, inflected, "→", correction, correct == correction)
+
+    elif v_cat["frontness"] == True and "lar" in inflected:
+      output = inflected @ plural_correction_rule_e
+      paths = list(output.paths().ostrings())
+      correction = paths[0]
+      print(lemma, inflected, "→", correction, correct == correction)
+
+    else:
+      correction = inflected
+      
+# 12/04 update
 import pynini
 
 # Define alphabet
@@ -98,54 +150,3 @@ for word in tur_dev:
 
 #   if msd.startswith('V'):
 #     print(lemma, v_vowel_categorize(lemma))
-
-# 12/06 update
-# this is for adding noun plural suffix
-import pynini
-
-# Define Turkish alphabet
-turkish_alphabet = "abcçdefgğhıijklmnoöprsştuüvyz " # add " "(space), so it includes word compounds, like "sözdizimsel tuzlerde" etc.
-sigma = pynini.union(*turkish_alphabet).closure()
-
-# Vowel transducer a
-# plural_correction_a = pynini.union(pynini.cross(pynini.union(*vowels).closure, "a"),)
-
-# Vowel transducer e
-# plural_correction_e = pynini.union(pynini.cross(pynini.union(*vowels).closure, "e"),)
-
-# Plural suffix context for a
-plural_correction_rule_a = pynini.cdrewrite(
-        pynini.cross("e", "a"),
-        "l",    
-        "r",    
-        sigma)
-
-# Plural suffix context for e
-plural_correction_rule_e = pynini.cdrewrite(
-        pynini.cross("a", "e"),
-        "l",
-        "r",
-        sigma)
-
-# Process
-for i, line in enumerate(tur_out):
-  lemma, msd, inflected = line[:3]
-  correct = dev[i]
-
-  if msd.startswith("N") and '(PL' in msd:
-    v_cat = n_vowel_categorize(lemma)
-
-    if v_cat["frontness"] == False and "ler" in inflected:
-      output = inflected @ plural_correction_rule_a
-      paths = list(output.paths().ostrings())
-      correction = paths[0]
-      print(lemma, inflected, "→", correction, correct == correction)
-
-    elif v_cat["frontness"] == True and "lar" in inflected:
-      output = inflected @ plural_correction_rule_e
-      paths = list(output.paths().ostrings())
-      correction = paths[0]
-      print(lemma, inflected, "→", correction, correct == correction)
-
-    else:
-      correction = inflected
