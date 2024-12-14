@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1BtfWdUKjxHG119J0Z7v2RgPSrnn7RZM-
 """
 
-! pip install pynini
+# ! pip install pynini
 
 def n_vowel_categorize(lemma):
   for char in reversed(lemma):
