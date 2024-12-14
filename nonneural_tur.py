@@ -162,27 +162,6 @@ def prefix_suffix_rules_get(lemma, form):
 
     return prules, srules
 
-
-    # Suffix rules
-    ins  = lr + ls + ">"
-    outs = fr + fs + ">"
-    srules = set()
-    for i in range(min(len(ins), len(outs))):
-        srules.add((ins[i:], outs[i:]))
-    srules = {(x[0].replace('_',''), x[1].replace('_','')) for x in srules}
-
-    # Prefix rules
-    prules = set()
-    if len(lp) >= 0 or len(fp) >= 0:
-        inp = "<" + lp
-        outp = "<" + fp
-        for i in range(0,len(fr)):
-            prules.add((inp + fr[:i],outp + fr[:i]))
-            prules = {(x[0].replace('_',''), x[1].replace('_','')) for x in prules}
-
-    return prules, srules
-
-
 def apply_best_rule(lemma, msd, allprules, allsrules):
     """
     Applies the longest-matching suffix-changing rule given an input form and the MSD. 
