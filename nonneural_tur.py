@@ -281,22 +281,17 @@ def main(argv):
                 form = form[::-1]
             prules, srules = prefix_suffix_rules_get(lemma, form)
 
-            if msd not in allprules and len(prules) > 0:
-                allprules[msd] = {}
-            if msd not in allsrules and len(srules) > 0:
-                allsrules[msd] = {}
+            for rules, storage in [(prules, allprules), (srules, allsrules)]: # consolidating the msd creation codes using a loop
+                if msd not in storage and len(rules) > 0:
+                    storage[msd] = {}
 
-            for r in prules:
-                if (r[0],r[1]) in allprules[msd]:
-                    allprules[msd][(r[0],r[1])] = allprules[msd][(r[0],r[1])] + 1
-                else:
-                    allprules[msd][(r[0],r[1])] = 1
+            for rules, storage in [(prules, allprules), (srules, allsrules)]: # consolidating the rule-counting codes
+                for r in rules:
+                    if (r[0], r[1]) in storage[msd]:
+                        storage[msd][(r[0], r[1])] += 1
+                    else:
+                        storage[msd][(r[0], r[1])] = 1
 
-            for r in srules:
-                if (r[0],r[1]) in allsrules[msd]:
-                    allsrules[msd][(r[0],r[1])] = allsrules[msd][(r[0],r[1])] + 1
-                else:
-                    allsrules[msd][(r[0],r[1])] = 1
 
         # Run eval on dev
         devlines = [line.strip() for line in open(path + lang + ".dev", "r", encoding='utf8') if line != '\n']
@@ -306,15 +301,16 @@ def main(argv):
         numguesses = 0
         if OUTPUT:
             outfile = open(path + lang + ".out", "w", encoding='utf8')
-        # apply best rules on the leamma based on msd
+        # apply best rules on the lemma based on msd
         for l in devlines:
             lemma, msd, correct = l.split(u'\t')
-            if prefbias > suffbias:
-                lemma = lemma[::-1]
-            outform = apply_best_rule(lemma, msd, allprules, allsrules)
-            if prefbias > suffbias:
-                outform = outform[::-1]
-                lemma = lemma[::-1]
+            if prefbias > suffbias: # consolidate the prefix-biased condition
+                lemma = lemma[::-1]  # Reverse lemma for prefix alignment
+                outform = apply_best_rule(lemma, msd, allprules, allsrules)[::-1]  # Reverse the result
+                lemma = lemma[::-1]  # Restore original lemma
+            else:
+                outform = apply_best_rule(lemma, msd, allprules, allsrules)
+
             if outform == correct:
                 numcorrect += 1
             numguesses += 1
